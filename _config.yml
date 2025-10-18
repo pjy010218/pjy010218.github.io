@@ -70,7 +70,6 @@ sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
 # Outputting
 permalink: /:title/
 paginate: 5 # amount of posts to show
@@ -78,9 +77,9 @@ paginate_path: "/blog/page:num/"
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 collections:
-  poetry:
+  papers:
     output: true
-    permalink: /:collection/:title/
+    permalink: /papers/:name/
 
 # Plugins
 gems:
@@ -110,13 +109,6 @@ defaults:
       layout: post
       comments: true
       share: true
-  # _poetry
-  - scope:
-      path: ""
-      type: poetry
-    values:
-      layout: post
-      share: false
   # _exclude    
 exclude:
          - vendor

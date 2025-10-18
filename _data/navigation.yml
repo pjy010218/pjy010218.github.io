@@ -1,11 +1,9 @@
 # main links
 main:
-  - title: "Documentation"
-    url: /documentation
-  - title: "Netlify CMS"
-    url: /netlify-cms-jekyll-setup
   - title: "Blog"
-    url: /blog        
+    url: /blog
+  - title: "Papers"
+    url: /papers        
   - title: "Submenu"
     url: /
     children: 
