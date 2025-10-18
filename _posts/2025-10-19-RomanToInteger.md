@@ -1,6 +1,6 @@
 ---
-seotitle:  An Example SEO Title 
-title: An Example Post With Featured Image
+seotitle:  Leetcode Roman To Integer Question 
+title: "[Leet: Easy] Roman To Integer"
 description: Example meta description
 author: Mighil
 type: post
