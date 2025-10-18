@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: example"
+title: "Tag: LeetCode"
 tag: LeetCode
 ---
 
