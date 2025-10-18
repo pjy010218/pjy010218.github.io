@@ -1,27 +1,21 @@
 ---
 layout: home
 comments: false
-seotitle: SparrowX - Free Minimal SEO-friendly Jekyll Theme (Netlify CMS)
-description: Built on top of Sparro by lingxz, SparrowX is a clean and minimal free Jekyll theme by Mighil. This is a ready-made Jekyll theme for Netlify CMS. 
+seotitle: TheParkBoard - Where I write about things I've learned.
+description: Hi, I'm a cybersecurity student, and here are some things I've worked, working, will work on.
 ---
 
-Hi, I’m [@sparrow's](https://github.com/lingxz/sparrow) sister and my [mainainter](https://migftw.com) has made me compatible with NetlifyCMS. I am particularly great for a SEO-focused writer’s blog or personal webpage. I'm programmed to render your system font-stack and my performance grade is 94 on tools.pingdom.com.
+대한민국에서 사이버 보안을 공부 중인 학생입니다.
+관심 있게 보고 듣고 읽은 것은 이 곳에 기록해두었습니다.
 
-This is a demo. You can find the source code on [GitHub](https://github.com/migftw/sparrowx) and the documentation is available [on this page.](/documentation)
+Hi, I'm a cybersecurity student based in South Korea.
+Welcome to my blog.
 
-## Credits
+## About me
 
-- Base theme sparrow by [lingxz](https://github.com/lingxz/sparrow)
-- Icon made by [Freepik](https://www.freepik.com/) from www.flaticon.com 
-
-## Tip Me
-
-Support if you’d like by referring my [resume](https://migftw.com/resume) or donating through [PayPal](https://www.paypal.me/mighil) or [Alipay](https://migftw.com/wp-content/uploads/2019/02/mighil-alipay.jpg).
+Refer this blog as my resume, or just a source of information.
+I major in **System Security**, and try my best at security related to **AI**, **Cloud**, or things that catch my attention.
 
 ## Latest from the blog
-
-
-
-
 
 
