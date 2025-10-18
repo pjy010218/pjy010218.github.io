@@ -7,7 +7,7 @@ type: post
 updated: 2025-10-19
 sitemap:
   lastmod: 2025-10-19
-url: /blog/RomanToInteger
+url: /blog/RomanToInteger/
 tags:
   - LeetCode
 ---
@@ -18,13 +18,9 @@ tags:
 이 문제는 로마 숫자를 정수로 변환해서 계산하는 문제입니다.<br>
 
 > - 입력 예시: "III"
-> - 출력 예시: "3"
-> 
-> 
+> - 출력 예시: "3" <br>
 > - 입력 예시: "LVIII"
-> - 출력 예시: "58"
-> 
-> 
+> - 출력 예시: "58" <br>
 > - 입력 예시: "MCMXCIV"
 > - 출력 예시: "1994"
 
