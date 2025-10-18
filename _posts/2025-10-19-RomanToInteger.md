@@ -1,13 +1,13 @@
 ---
 seotitle:  Leetcode Roman To Integer Question 
 title: "[Leet: Easy] Roman To Integer"
-description: Example meta description
-author: Mighil
+description: Explanation and answer for "Roman To Integer" problem in Leetcode.
+author: Junyoung Park
 type: post
-updated: 2018-10-30T07:45:22+00:00 
+updated: 2025-10-19
 sitemap:
-  lastmod: 2018-10-30T07:45:22+00:00
-url: /blog/example/
+  lastmod: 2025-10-19
+url: /blog/RomanToInteger
 tags:
   - LeetCode
 ---
@@ -17,24 +17,25 @@ tags:
 
 이 문제는 로마 숫자를 정수로 변환해서 계산하는 문제입니다.<br>
 
-> [!EXAMPLE]
 > - 입력 예시: "III"
 > - 출력 예시: "3"
->
+> 
+> 
 > - 입력 예시: "LVIII"
 > - 출력 예시: "58"
+> 
 > 
 > - 입력 예시: "MCMXCIV"
 > - 출력 예시: "1994"
 
-따라서, **간단한 switch ~ case 문**으로 해결할 수 있습니다.<br>
+따라서, **간단한 switch ~ case 문**으로 해결할 수 있습니다.<br><br>
 한 가지 **주의할 점**은,<br>
 "IV", "CM"과 같은 예외사항이 존재한다는 것입니다.<br>
 <br>
 이 예외사항을 다루기 위해서는 한 가지 아이디어가 필요한데,<br>
 저의 경우에는 아래와 같이 생각했습니다.<br>
 
-> "한 글자 뒤를 미리 확인해서 예외사항이면 예외 처리하고 뒷문자까지 건너뛰자."
+> **"한 글자 뒤를 미리 확인해서 예외사항이면 예외 처리하고 뒷문자까지 건너뛰자."**
 
 <br>
 이제 작성해야 할 조건문이 몇 줄 늘어날 뿐, 큰 문제가 되진 않습니다.<br>
