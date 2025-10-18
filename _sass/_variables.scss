@@ -6,12 +6,13 @@
    Typography
    ========================================================================== */
 
-$system                     : -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$pretendard: 'Pretendard', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-$global-font-family         : $system !default;
-$header-font-family         : $system !default;
-$fancy-font-family          : $system !default;
-$caption-font-family        : $system !default;
+$global-font-family: $pretendard !default;
+$header-font-family: $pretendard !default;
+$fancy-font-family: $pretendard !default;
+$caption-font-family: $pretendard !default;
+
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* type scale */
