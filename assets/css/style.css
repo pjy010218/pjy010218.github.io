@@ -1,5 +1,11 @@
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
 .post-card {
-  position: relative;
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 1.5rem;
@@ -12,45 +18,44 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-.post-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.post-tags {
-  text-align: right;
-  font-size: 0.85rem;
-  color: #999;
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-
-.post-tags .tag {
-  margin-left: 0.5rem;
-}
-
-.post-card h2 {
+.post-title {
   margin: 0;
   font-size: 1.4rem;
   color: #2c3e50;
-  flex-grow: 1;
 }
 
-.post-card a {
+.post-title a {
   text-decoration: none;
+  color: #2c3e50;
+}
+
+.post-title a:hover {
   color: #3498db;
 }
 
-.post-card .date {
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #999;
-  margin-bottom: 0.5rem;
 }
 
-.post-card .read-more {
-  display: inline-block;
-  margin-top: 0.5rem;
-  font-weight: bold;
+.post-date {
+  color: #888;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.post-tags .tag a {
+  color: #aaa;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.post-tags .tag a:hover {
+  color: #666;
 }
