@@ -107,3 +107,65 @@ $susy: (
 @import "slimmenu";
 @import "post";
 @import "page";
+
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.post-card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.12);
+}
+
+.post-title {
+  margin: 0 0 0.4rem 0;
+  font-size: 1rem;
+}
+
+.post-title a {
+  color: #a33025;
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  color: #3498db;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.65rem;
+  color: #777;
+}
+
+.post-date {
+  /* 기본 왼쪽 정렬 */
+}
+
+.post-tags {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.post-tags .tag a {
+  color: #999;
+  text-decoration: none;
+  font-size: 0.65rem;
+}
+
+.post-tags .tag a:hover {
+  color: #555;
+}
