@@ -1,13 +1,13 @@
 ---
-seotitle:  Leetcode "Longest Common Prefix" Question 
-title: "[Leet: Easy] Longest Common Prefix"
-description: Explanation and answer for "Longest Common Prefix" problem in Leetcode.
-author: Junyoung Park
+seotitle:  Leetcode "Remove Duplicates from Sorted Array" Question 
+title: "[Leet: Easy] Remove Duplicates from Sorted Array"
+description: Explanation and answer for "Remove Duplicates from Sorted Array" problem in Leetcode.
+author: Junyeong Park
 type: post
 updated: 2025-10-19
 sitemap:
   lastmod: 2025-10-19
-url: /blog/Longest-Common-Prefix/
+url: /blog/Remove-Duplicates-from-Sorted-Array/
 tags:
   - LeetCode
 ---
