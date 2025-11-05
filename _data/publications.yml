@@ -1,0 +1,15 @@
+- title: "허니팟 자동화 방안: 디지털 트윈과 MITRE ATTACK TTP 매핑을 통하여"
+  conference: "한국정보보호학회 하계학술대회 (25-CISC'S)"
+  url: "/assets/pdfs/허니팟_자동화_방안_디지털_트윈과_MITRE_ATTACK_TTP_매핑을_통하여_초안.pdf"
+  date: "2025/06/21"
+
+- title: "AORM: 위협 수준 탐지를 위한 다계층 구조 기반 위험 모델 제안"
+  conference: "한국인터넷정보학회 추계학술대회 (25-KSII'F)"
+  url: "/assets/pdfs/AORM_ 위협 수준 탐지를 위한 다계층 구조 기반 위험 모델 제안.pdf"
+  date: "2025/10/30"
+
+- title: "A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection"
+  conference: "2025 IEEE PRDC Workshop"
+  url: "/assets/pdfs/A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection.pdf"
+  date: "2025/11/04"
+# 여기에 새 논문을 계속 추가하면 됩니다.
