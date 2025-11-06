@@ -12,7 +12,7 @@ permalink: /papers/
   <ul class="publication-list" style="list-style-type: none; padding-left: 0;">
     {% for pub in site.data.publications %}
       <li style="margin-bottom: 1.5em;">
-        <strong>{{ pub.title }}</strong>
+        <strong>⦁ {{ pub.title }}</strong>
         <br>
         <em>{{ pub.conference }}</em>
         <br>
