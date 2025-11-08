@@ -26,13 +26,10 @@ permalink: /papers/
   <h2>Paper Logs</h2>
   <p>논문 작성과 관련된 일지를 기록하는 공간입니다.</p>
   
-  <ul class="paper-log-list" style="list-style-type: none; padding-left: 0;">
+  <div class="posts">
     {% for paper in site.papers %}
-      <li style="margin-bottom: 1.5em;">
-        <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
-        <p>{{ paper.excerpt }}</p>
-      </li>
+      {% include post-entry.html post=paper %}
     {% endfor %}
-  </ul>
+  </div>
 
 </div>
