@@ -109,6 +109,15 @@ defaults:
       layout: post
       comments: true
       share: true
+  # _papers
+  - scope:
+      path: ""
+      type: papers  # 컬렉션 이름을 'papers'로 지정
+    values:
+      layout: post   # 'post' 레이아웃 적용 (또는 'page'도 가능)
+      comments: true # 일지에도 댓글 허용 시
+      share: true    # 일지에도 공유 버튼 표시 시
+      
   # _exclude    
 exclude:
          - vendor
