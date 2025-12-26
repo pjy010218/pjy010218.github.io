@@ -28,7 +28,14 @@ permalink: /papers/
   
   <div class="posts">
     {% for post in site.papers %}
-      {% include post-entry.html %}
+          <div class="list__item">
+      <article class="page__item">
+        <h3 class="page__item-title"><a href="{{ post.url | absolute_url }}">{{ post.title | default: post.seotitle }}</a></h3>
+        {% if post.author %}<p><strong>Author:</strong> {{ post.author }}</p>{% endif %}
+        {% if post.date %}<p><time>{{ post.date | date: "%B %d, %Y" }}</time></p>{% endif %}
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+      </article>
+    </div>
     {% endfor %}
   </div>
 
