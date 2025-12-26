@@ -27,8 +27,8 @@ permalink: /papers/
   <p>논문 작성과 관련된 일지를 기록하는 공간입니다.</p>
   
   <div class="posts">
-    {% for paper in site.papers %}
-      {% include post-entry.html post=paper %} 
+    {% for post in site.papers %}
+      {% include post-entry.html %}
     {% endfor %}
   </div>
 
