@@ -28,7 +28,7 @@ permalink: /papers/
   
   <div class="posts">
     {% for paper in site.papers %}
-      {% include post-entry.html post=paper %}
+      {% include post-entry.html post=paper %} 
     {% endfor %}
   </div>
 
