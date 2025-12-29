@@ -88,7 +88,15 @@
         </div>
         <div class="header-content">
           <h1><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h1>
-          <p>{{ site.description }}</p> <nav class="nav-links">
+          <p>{{ site.description }}</p>
+
+          <div class="social-links">
+            <a href="https://github.com/pjy010218" target="_blank" title="Github"><i class="fa fa-github"></i></a>
+            <a href="https://linkedin.com/in/준영-박-0a0b12345" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:pjy010218@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+          </div>
+          
+          <nav class="nav-links">
             <a href="{{ '/' | relative_url }}">Home</a>
             <a href="{{ '/blog/' | relative_url }}">Blog</a>
             <a href="{{ '/papers/' | relative_url }}">Papers</a>
