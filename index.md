@@ -13,4 +13,18 @@ layout: home
     </p>
 </section>
 
-<div class="section-title" style="font-family: var(--font-mono); background: #eee; padding: 4px 10px; margin: 40px 0 20px 0;">LATEST RESEARCH & POSTS</div>
+<div style="margin-bottom: 40px;">
+  <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #999; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 15px;">
+    Latest Posts & Research
+  </h2>
+  
+  {% assign all_entries = site.posts | concat: site.papers | sort: "date" | reversed %}
+
+  {% for post in all_entries limit: 5 %}
+    {% include post-entry.html %}
+  {% endfor %}
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <a href="/blog/" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #0044cc; text-decoration: none;">[ VIEW ALL BRIEFINGS ]</a>
+</div>
