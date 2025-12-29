@@ -2,16 +2,17 @@
 layout: default
 ---
 
-<div id="main" role="main">
-  {% include topnav.html %}
+<article class="page-content" style="font-family: 'Crimson Pro', serif;">
+  {% if page.title %}
+  <header style="margin-bottom: 30px;">
+    <h1 style="font-size: 1.8rem; font-weight: 600; border-bottom: 1px solid #222; padding-bottom: 10px; margin-bottom: 10px;">{{ page.title }}</h1>
+    {% if page.description %}
+    <p style="font-style: italic; color: #666; font-size: 0.95rem;">{{ page.description }}</p>
+    {% endif %}
+  </header>
+  {% endif %}
 
-  <div class="page">
-      {% if page.title %}
-        <h1 class="page__title">{{ page.title }}</h1>
-      {% endif %}
-      {% if page.subtitle %}
-        <p class="page__subtitle">{{ page.subtitle }}</p>
-      {% endif %}
+  <div class="entry-content" style="line-height: 1.7; font-size: 1rem;">
     {{ content }}
   </div>
-</div>
+</article>
