@@ -10,7 +10,6 @@
 
     <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
-    <!-- http://t.co/dKP3o1e -->
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,30 +18,44 @@
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
     </script>
 
-    <!-- For all browsers -->
-    <!--  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Heebo:100,300,400,500,700,800,900" rel="stylesheet">  -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | absolute_url }}">
     <meta http-equiv="cleartype" content="on">
+
     {% if site.tags != "" %}
-  {% include collecttags.html %}
-{% endif %}
+      {% include collecttags.html %}
+    {% endif %}
   </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-  <div id="mastheadbackground"></div>
-    {{ content }}
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" style="background-color: #f5f5f0; margin: 0; padding: 0;">
+    
+    <div class="journal-container" style="max-width: 850px; margin: 0 auto; background: #ffffff; min-height: 100vh; padding: 40px; border-left: 1px solid #d1d1ca; border-right: 1px solid #d1d1ca; box-sizing: border-box;">
+      
+      <header style="border-bottom: 2px solid #222222; margin-bottom: 40px; padding-bottom: 20px;">
+        <h1 style="font-family: 'Crimson Pro', serif; font-size: 2.5rem; margin: 0; font-weight: 600; letter-spacing: -0.02em;">
+          <a href="{{ '/' | absolute_url }}" style="color: #222222; text-decoration: none;">{{ site.title }}</a>
+        </h1>
+        <nav class="nav-links" style="font-family: 'JetBrains Mono', monospace; text-transform: uppercase; display: flex; gap: 20px; margin-top: 15px; font-size: 0.85rem;">
+          <a href="{{ '/' | relative_url }}" style="color: #0044cc; text-decoration: none;">Home</a>
+          <a href="{{ '/blog/' | relative_url }}" style="color: #0044cc; text-decoration: none;">Blog</a>
+          <a href="{{ '/papers/' | relative_url }}" style="color: #0044cc; text-decoration: none;">Papers</a>
+        </nav>
+      </header>
 
-    <div class="page__footer">
-      <footer>
-        <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. <a href="https://twitter.com/migftw" rel="nofollow">@migftw</a> <span class="page__footer-heart"><i class="fa fa-twitter" aria-hidden="true"></i></span>. <a href="https://github.com/migftw/sparrowx">SparrowX</a> built on top of <a href="https://github.com/lingxz/sparrow">@sparrow</a>.</div>
+      <main>
+        {{ content }}
+      </main>
+
+      <footer style="margin-top: 80px; border-top: 1px solid #d1d1ca; padding-top: 20px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #666666;">
+        <div class="page__footer-copyright">
+          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. 
+          Built on <a href="https://github.com/migftw/sparrowx" style="color: inherit;">SparrowX</a> 
+          with <span style="font-family: serif;">vault-0</span> aesthetic.
+        </div>
       </footer>
     </div>
-     <script src="{{ '/compressed.js' | absolute_url }}"></script>
-    <!--<script src="{{ '/assets/js/plugins/jquery-1.12.4.min.js' | absolute_url }}"></script>
-    <script src="{{ '/assets/js/plugins/rrssb.min.js' | absolute_url }}"></script>
-    <script src="{{ '/assets/js/slimmenu.js' | absolute_url }}"></script>
-    <script src="{{ '/assets/js/main.js' | absolute_url }}"></script> -->
+
+    <script src="{{ '/compressed.js' | absolute_url }}"></script>
     {% include analytics.html %}
 
   </body>
