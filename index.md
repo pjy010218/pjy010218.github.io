@@ -18,13 +18,19 @@ layout: home
     Latest Posts & Research
   </h2>
   
-  {% assign all_entries = site.posts | concat: site.papers | sort: "date" | reversed %}
+  {% assign all_entries = site.papers | sort: "date" | reversed %}
 
   {% for post in all_entries limit: 5 %}
     {% include post-entry.html %}
   {% endfor %}
+  
+  {% if latest_logs.size == 0 %}
+    <p style="font-family: 'Crimson Pro', serif; font-size: 0.9rem; color: #999; text-align: center; padding: 20px 0;">
+      NO RESEARCH LOGS INDEXED.
+    </p>
+  {% endif %}
 </div>
 
 <div style="text-align: center; margin-top: 20px;">
-  <a href="/blog/" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #0044cc; text-decoration: none;">[ VIEW ALL BRIEFINGS ]</a>
+  <a href="/papers/" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #0044cc; text-decoration: none;">[ VIEW ALL RESEARCH LOGS ]</a>
 </div>
