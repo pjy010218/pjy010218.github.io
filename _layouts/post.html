@@ -2,29 +2,65 @@
 layout: default
 ---
 
-<article class="post-content" style="font-family: 'Crimson Pro', serif;">
-  <header style="margin-bottom: 40px;">
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #999; text-transform: uppercase; margin-bottom: 10px;">
-      {{ page.date | date: "%Y.%m.%d" }} / {{ page.categories | join: ", " }}
+<article class="post-content-container" style="font-family: 'Crimson Pro', serif; max-width: 100%; word-break: keep-all; overflow-wrap: break-word;">
+  
+  <header style="margin-bottom: 35px; border-bottom: 2px solid #222; padding-bottom: 20px;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #999; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px;">
+      {{ page.date | date: "%Y.%m.%d" }} // CATEGORY: {{ page.categories | join: ", " | default: "RESEARCH" }}
     </div>
-    
-    <h1 style="font-size: 2rem; font-weight: 600; line-height: 1.2; margin: 0 0 15px 0; border-bottom: 2px solid #222; padding-bottom: 15px;">
+    <h1 style="font-size: clamp(1.5rem, 5vw, 2.2rem); font-weight: 600; line-height: 1.2; margin: 0; color: #111;">
       {{ page.title }}
     </h1>
   </header>
 
-  <div class="entry-content" style="line-height: 1.8; font-size: 1.05rem; color: #222;">
+  <div class="entry-content" style="line-height: 1.8; font-size: clamp(1rem, 2.5vw, 1.1rem); color: #333; text-align: justify;">
     {{ content }}
   </div>
 
-  {% if page.tags %}
-  <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px dashed #d1d1ca;">
-    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #666;">
-      KEYWORDS: 
-      {% for tag in page.tags %}
-      <span style="background: #f0f0f0; padding: 2px 5px; border: 1px solid #ddd; margin-right: 5px;">#{{ tag }}</span>
-      {% endfor %}
+  <footer style="margin-top: 60px; padding-top: 25px; border-top: 1px dashed #d1d1ca;">
+    <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #777;">
+      // END OF DOCUMENT
+      {% if page.tags.size > 0 %}
+      <div style="margin-top: 10px;">
+        KEYWORDS: 
+        {% for tag in page.tags %}
+        <span style="background: #f4f4f4; padding: 2px 6px; border: 1px solid #ddd; margin-right: 5px;">#{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
   </footer>
-  {% endif %}
+
 </article>
+
+<style>
+  /* 상세 페이지 내부 이미지 및 코드 블록 적응형 조절 */
+  .entry-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .entry-content pre, .entry-content code {
+    font-family: 'JetBrains Mono', monospace;
+    background: #f8f8f8;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+  
+  .entry-content pre {
+    padding: 15px;
+    overflow-x: auto;
+    border: 1px solid #eee;
+    line-height: 1.5;
+  }
+
+  /* 모바일에서 텍스트가 양 끝에 너무 붙지 않도록 조정 */
+  @media (max-width: 600px) {
+    .entry-content {
+      line-height: 1.7;
+      text-align: left; /* 모바일 가독성을 위해 좌측 정렬 */
+    }
+  }
+</style>
