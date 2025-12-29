@@ -1,23 +1,26 @@
-<div class="list__item">
-  <article class="page__item" itemscope itemtype="http://schema.org/CreativeWork">
+<article class="post-entry" style="padding: 12px 0; border-bottom: 1px dashed #d1d1ca; margin-bottom: 5px;">
+  <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 15px;">
+    
+    <div style="flex: 1;">
+      <h2 style="font-size: 1.05rem; margin: 0; font-family: 'Crimson Pro', serif; font-weight: 600; line-height: 1.3;">
+        <span class="type-tag" style="font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; padding: 1px 5px; background: #f0f0f0; border: 1px solid #ccc; margin-right: 8px; vertical-align: middle; color: #444;">
+          {{ post.categories | first | default: 'LOG' | uppercase }}
+        </span>
+        <a href="{{ post.url | relative_url }}" style="color: #222; text-decoration: none;">{{ post.title }}</a>
+      </h2>
+      
+      {% if post.excerpt %}
+      <p style="font-size: 0.85rem; color: #666; margin: 4px 0 0 0; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;">
+        {{ post.excerpt | strip_html | truncate: 120 }}
+      </p>
+      {% endif %}
+    </div>
 
-    <h3 class="page__item-title" itemprop="headline">
-      <a href="{{ post.url | absolute_url }}" rel="permalink">{{ post.title | default: post.seotitle }}</a>
-    </h3>
+    <div style="flex-shrink: 0; text-align: right;">
+      <time datetime="{{ post.date | date_to_xmlschema }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #999; text-transform: uppercase;">
+        {{ post.date | date: "%b %d, %Y" }}
+      </time>
+    </div>
 
-    {% if post.author %}
-    <p class="page__meta"><strong>Author:</strong> {{ post.author }}</p>
-    {% endif %}
-
-    {% if post.date %}
-    <p class="page__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></p>
-    {% endif %}
-
-    {% if post.description %}
-    <p class="page__excerpt">{{ post.description }}</p>
-    {% elsif post.excerpt %}
-    <p class="page__excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    {% endif %}
-
-  </article>
-</div>
+  </div>
+</article>
