@@ -31,15 +31,29 @@
     
     <div class="journal-container" style="max-width: 850px; margin: 0 auto; background: #ffffff; min-height: 100vh; padding: 40px; border-left: 1px solid #d1d1ca; border-right: 1px solid #d1d1ca; box-sizing: border-box;">
       
-      <header style="border-bottom: 2px solid #222222; margin-bottom: 40px; padding-bottom: 20px;">
-        <h1 style="font-family: 'Crimson Pro', serif; font-size: 2.5rem; margin: 0; font-weight: 600; letter-spacing: -0.02em;">
-          <a href="{{ '/' | absolute_url }}" style="color: #222222; text-decoration: none;">{{ site.title }}</a>
-        </h1>
-        <nav class="nav-links" style="font-family: 'JetBrains Mono', monospace; text-transform: uppercase; display: flex; gap: 20px; margin-top: 15px; font-size: 0.85rem;">
-          <a href="{{ '/' | relative_url }}" style="color: #0044cc; text-decoration: none;">Home</a>
-          <a href="{{ '/blog/' | relative_url }}" style="color: #0044cc; text-decoration: none;">Blog</a>
-          <a href="{{ '/papers/' | relative_url }}" style="color: #0044cc; text-decoration: none;">Papers</a>
-        </nav>
+      <header style="border-bottom: 2px solid #222222; margin-bottom: 40px; padding-bottom: 25px; display: flex; align-items: flex-start; gap: 20px;">
+        
+        <div class="header-image" style="flex-shrink: 0;">
+          <a href="{{ '/' | absolute_url }}">
+            <img src="{{ site.favicon }}" alt="Logo" style="width: 80px; height: 80px; border: 1px solid #d1d1ca; padding: 2px;">
+          </a>
+        </div>
+
+        <div class="header-content" style="flex-grow: 1;">
+          <h1 style="font-family: 'Crimson Pro', serif; font-size: 2.5rem; margin: 0; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1;">
+            <a href="{{ '/' | absolute_url }}" style="color: #222222; text-decoration: none;">{{ site.title }}</a>
+          </h1>
+          
+          <p style="font-family: 'Crimson Pro', serif; font-style: italic; color: #666666; margin: 5px 0 15px 0; font-size: 1.1rem;">
+            {{ site.description }}
+          </p>
+
+          <nav class="nav-links" style="font-family: 'JetBrains Mono', monospace; text-transform: uppercase; display: flex; gap: 20px; font-size: 0.85rem;">
+            <a href="{{ '/' | relative_url }}" style="color: #0044cc; text-decoration: none; font-weight: 500;">Home</a>
+            <a href="{{ '/blog/' | relative_url }}" style="color: #0044cc; text-decoration: none; font-weight: 500;">Blog</a>
+            <a href="{{ '/papers/' | relative_url }}" style="color: #0044cc; text-decoration: none; font-weight: 500;">Papers</a>
+          </nav>
+        </div>
       </header>
 
       <main>
@@ -49,8 +63,8 @@
       <footer style="margin-top: 80px; border-top: 1px solid #d1d1ca; padding-top: 20px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #666666;">
         <div class="page__footer-copyright">
           &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. 
-          Built on <a href="https://github.com/migftw/sparrowx" style="color: inherit;">SparrowX</a> 
-          with <span style="font-family: serif;">vault-0</span> aesthetic.
+          <a href="https://github.com/migftw/sparrowx" style="color: inherit; text-decoration: underline;">SparrowX</a> 
+          archived in <span style="font-family: serif; font-style: italic;">The ParkBoard</span>.
         </div>
       </footer>
     </div>
