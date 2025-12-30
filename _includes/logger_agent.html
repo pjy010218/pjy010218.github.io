@@ -1,0 +1,40 @@
+<div id="ai-logger-container" style="display:none;">
+    <div class="vault-card-static" style="border: 1px solid #222; padding: 20px; background: #fff;">
+        <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; border-bottom: 1px solid #eee;">SECURE RESEARCH UPLINK</h2>
+        
+        <textarea id="raw-input" placeholder="Enter raw research notes..." 
+            style="width:100%; height:150px; margin-top:15px; font-family: 'Crimson Pro', serif; border:1px solid #ddd; padding:10px;"></textarea>
+        
+        <div style="margin-top:10px; display:flex; gap:10px;">
+            <button id="process-btn" class="draft-button" style="background:#222; color:#fff; padding:10px;">STRUCTURE LOG</button>
+            <button id="sync-btn" class="draft-button" style="background:#0044cc; color:#fff; padding:10px; display:none;">SYNC TO GITHUB</button>
+        </div>
+
+        <div id="output-preview" style="margin-top:20px; font-size:0.85rem; display:none;">
+            <h3 id="output-title" style="font-weight:bold;"></h3>
+            <pre id="output-content" style="background:#f4f4f4; padding:10px; white-space:pre-wrap;"></pre>
+        </div>
+    </div>
+</div>
+
+<script>
+const ADMIN_KEY = localStorage.getItem('VAULT_ADMIN_SECRET');
+
+if (ADMIN_KEY === "{{ site.admin_access_token }}") {
+    document.getElementById('ai-logger-container').style.display = 'block';
+}
+
+document.getElementById('process-btn').addEventListener('click', async () => {
+    const text = document.getElementById('raw-input').value;
+    const response = await fetch('/api/process-log', {
+        method: 'POST',
+        body: JSON.stringify({ text, auth: ADMIN_KEY })
+    });
+    const data = await response.json();
+    
+    document.getElementById('output-preview').style.display = 'block';
+    document.getElementById('output-title').innerText = data.title;
+    document.getElementById('output-content').innerText = data.formatted;
+    document.getElementById('sync-btn').style.display = 'block';
+});
+</script>
