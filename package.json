@@ -1,0 +1,9 @@
+{
+  "name": "pjy-blog-ai-logger",
+  "version": "1.0.0",
+  "description": "AI Research Logger for The ParkBoard",
+  "main": "index.js",
+  "dependencies": {
+    "@google/genai": "^0.2.1"
+  }
+}
