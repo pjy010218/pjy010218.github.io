@@ -45,7 +45,6 @@ layout: home
   }
 
   .mega-log {
-    border-bottom: 1px solid var(--color-border);
     transition: margin 0.3s ease;
   }
 
@@ -97,7 +96,6 @@ layout: home
   }
   
   .mega-log[open] .mega-title {
-    border-bottom: 2px dashed var(--color-border);
     padding-bottom: 30px;
     margin-bottom: 0px; /* spacing defined by content padding */
     color: var(--color-accent);

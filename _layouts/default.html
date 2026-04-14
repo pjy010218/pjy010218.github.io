@@ -55,7 +55,6 @@
         padding: 50px 60px;
       }
 
-      /* Fixed Minimal Left Rail */
       .sidebar {
         width: 250px;
         flex-shrink: 0;
@@ -94,6 +93,7 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+        margin-bottom: 40px;
       }
       
       .sidebar-nav a {
@@ -147,6 +147,9 @@
       <aside class="sidebar">
         <div class="sidebar-top">
           <h1><a href="{{ '/' | absolute_url }}">P<br>J<br>Y.</a></h1>
+        </div>
+        
+        <div class="sidebar-bottom">
           <div class="sidebar-desc">
             대한민국에서 사이버 보안을 공부 중인 학생입니다.<br>
             시스템 보안을 전공하며 AI, 클라우드 및 최신 보안 기술에 주력하고 있습니다.
@@ -156,13 +159,13 @@
             <a href="{{ '/' | relative_url }}"><span>01</span> Research</a>
             <a href="{{ '/papers/' | relative_url }}"><span>02</span> Publications</a>
           </nav>
-        </div>
-        
-        <div class="sidebar-bottom">
-          <span style="color: var(--color-text); font-weight: 600; margin-bottom: 5px;">CONTACT & SOCIAL</span>
-          <a href="mailto:pjy010218@gmail.com">pjy010218@gmail.com</a>
-          <a href="https://github.com/pjy010218" target="_blank">Github</a>
-          <a href="https://www.linkedin.com/in/준영-박-0414623a0/" target="_blank">LinkedIn</a>
+
+          <div class="sidebar-contact" style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="color: var(--color-text); font-weight: 600; margin-bottom: 5px;">CONTACT & SOCIAL</span>
+            <a href="mailto:pjy010218@gmail.com">pjy010218@gmail.com</a>
+            <a href="https://github.com/pjy010218" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/준영-박-0414623a0/" target="_blank">LinkedIn</a>
+          </div>
         </div>
       </aside>
 
