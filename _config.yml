@@ -72,23 +72,18 @@ sass:
 
 # Outputting
 permalink: /:title/
-paginate: 5 # amount of posts to show
-paginate_path: "/blog/page:num/"
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 collections:
   papers:
-    output: true
-    permalink: /papers/:name/
+    output: false
 
 # Plugins
 gems:
-  - jekyll-paginate
   - jekyll-feed
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
   - jekyll-feed
 
 
@@ -101,22 +96,7 @@ defaults:
     values:
       layout: page
       comments: false
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      comments: true
-      share: true
-  # _papers
-  - scope:
-      path: ""
-      type: papers  # 컬렉션 이름을 'papers'로 지정
-    values:
-      layout: post   # 'post' 레이아웃 적용 (또는 'page'도 가능)
-      comments: true # 일지에도 댓글 허용 시
-      share: true    # 일지에도 공유 버튼 표시 시
+
       
   # _exclude    
 exclude:

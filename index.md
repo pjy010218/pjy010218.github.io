@@ -13,24 +13,19 @@ layout: home
     </p>
 </section>
 
-<div style="margin-bottom: 40px;">
-  <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #999; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 15px;">
-    Latest Posts & Research
-  </h2>
+<div style="margin-bottom: 40px; text-align: center;">
+  <p style="font-family: 'Crimson Pro', serif; font-size: 1.1rem; color: #555; max-width: 600px; margin: 0 auto 30px; line-height: 1.6;">
+    The blog has been retired in favor of an exclusive focus on research logs and academic publications. Explore the most recent developments and ongoing projects in the Research section.
+  </p>
   
-  {% assign all_entries = site.papers | sort: "date" | reversed %}
-
-  {% for post in all_entries limit: 5 %}
-    {% include post-entry.html %}
-  {% endfor %}
-  
-  {% if latest_logs.size == 0 %}
-    <p style="font-family: 'Crimson Pro', serif; font-size: 0.9rem; color: #999; text-align: center; padding: 20px 0;">
-      NO RESEARCH LOGS INDEXED.
-    </p>
-  {% endif %}
+  <a href="{{ '/papers/' | relative_url }}" style="display: inline-block; padding: 12px 24px; background: #222; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px; transition: all 0.2s ease; border: 1px solid #222;">
+    Explore Research Logs →
+  </a>
 </div>
 
-<div style="text-align: center; margin-top: 20px;">
-  <a href="/papers/" style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #0044cc; text-decoration: none;">[ VIEW ALL RESEARCH LOGS ]</a>
-</div>
+<style>
+  div > a:hover {
+    background: #fff !important;
+    color: #222 !important;
+  }
+</style>
