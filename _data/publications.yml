@@ -12,4 +12,9 @@
   conference: "2025 IEEE PRDC Workshop"
   url: "/assets/pdfs/A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection.pdf"
   date: "2025/11/04"
+
+- title: "LLM의 민감 정보 유출 방지 기술의 동향과 한계"
+  conference: "한국인터넷정보학회 춘계학술발표대회 (26-KSII'S)"
+  url: "/assets/pdfs/LLM의 민감 정보 유출 방지 기술의 동향과 한계.pdf"
+  date: "2026/05/07"
 # 여기에 새 논문을 계속 추가하면 됩니다.
