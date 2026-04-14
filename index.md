@@ -42,18 +42,22 @@ layout: home
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 100px;
+    /* Apply 3D Perspective Context */
+    perspective: 1200px;
+    perspective-origin: right center;
   }
 
   .mega-log {
     transition: margin 0.3s ease;
+    transform-style: preserve-3d;
   }
 
   /* Right-aligned staggered cascading visually */
   .mega-log:nth-child(5n+1) .mega-title { padding-right: 0%; text-align: right; }
-  .mega-log:nth-child(5n+2) .mega-title { padding-right: 8%; text-align: right; }
-  .mega-log:nth-child(5n+3) .mega-title { padding-right: 3%; text-align: right; }
-  .mega-log:nth-child(5n+4) .mega-title { padding-right: 15%; text-align: right; }
-  .mega-log:nth-child(5n+5) .mega-title { padding-right: 5%; text-align: right; }
+  .mega-log:nth-child(5n+2) .mega-title { padding-right: 6%; text-align: right; }
+  .mega-log:nth-child(5n+3) .mega-title { padding-right: 2%; text-align: right; }
+  .mega-log:nth-child(5n+4) .mega-title { padding-right: 10%; text-align: right; }
+  .mega-log:nth-child(5n+5) .mega-title { padding-right: 4%; text-align: right; }
 
   .mega-title {
     display: block;
@@ -64,10 +68,16 @@ layout: home
     font-weight: 800;
     letter-spacing: -0.04em;
     color: var(--color-text);
-    transition: color 0.2s ease, transform 0.2s ease;
+    
     position: relative;
     word-break: keep-all; 
     overflow-wrap: break-word;
+
+    /* 3D Slant Transform */
+    transform-origin: right center;
+    transform: rotateY(18deg) rotateX(4deg) translateZ(0);
+    transition: color 0.4s ease, transform 0.4s ease, text-shadow 0.4s ease;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.05), 10px 10px 20px rgba(0,0,0,0.03);
   }
   
   .mega-title::-webkit-details-marker {
@@ -76,7 +86,8 @@ layout: home
 
   .mega-title:hover {
     color: var(--color-sub);
-    transform: scale(0.98);
+    transform: rotateY(5deg) rotateX(2deg) scale(0.98) translateZ(50px);
+    text-shadow: 5px 5px 15px rgba(0,0,0,0.1);
   }
 
   .mega-meta {
@@ -87,18 +98,21 @@ layout: home
     letter-spacing: 0.1em;
     margin-top: 15px;
     font-weight: 400;
+    transform: translateZ(20px); /* slightly detach meta info visually if rendering in 3d */
   }
 
-  /* When expanded, lock it cleanly */
+  /* When expanded, lock it cleanly and flatten the 3D */
   .mega-log[open] {
     margin: 40px 0;
-    border-bottom: none;
   }
   
   .mega-log[open] .mega-title {
     padding-bottom: 30px;
-    margin-bottom: 0px; /* spacing defined by content padding */
+    margin-bottom: 0px; 
     color: var(--color-accent);
+    /* Flatten the 3D effect temporarily when reading so it isn't distracting */
+    transform: rotateY(0) rotateX(0) translateZ(0); 
+    text-shadow: none;
   }
 
   /* Smooth appearance for log content */
@@ -109,7 +123,6 @@ layout: home
     line-height: 1.8;
     color: #333;
     border: 1px solid var(--color-border);
-    border-top: none;
     box-shadow: 0 15px 40px rgba(0,0,0,0.04);
     animation: slideInDown 0.3s ease-out;
   }

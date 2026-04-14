@@ -25,7 +25,7 @@
     <!-- Academic & Editorial Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,800;1,400&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,800;0,900;1,400&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
       :root {
@@ -52,51 +52,60 @@
         min-height: 100vh;
         width: 100%;
         box-sizing: border-box;
-        padding: 50px 60px;
       }
 
-      .sidebar {
-        width: 250px;
+      /* Left Reserve Space */
+      .sidebar-spacer {
+        width: 400px;
         flex-shrink: 0;
+      }
+
+      /* Bottom Left Fixed Block */
+      .bottom-left-anchor {
+        position: fixed;
+        bottom: 50px;
+        left: 50px;
+        display: flex;
+        align-items: flex-end;
+        gap: 30px;
+        max-width: 400px;
+        z-index: 100;
+      }
+
+      /* Small Logo at far bottom left */
+      .site-logo {
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin: 0;
+      }
+      .site-logo a {
+        color: var(--color-text);
+        text-decoration: none;
+      }
+
+      /* Info Block Grouped bounds */
+      .info-group {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        position: sticky;
-        top: 50px;
-        height: calc(100vh - 100px);
+        gap: 25px;
         font-family: var(--font-mono);
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         line-height: 1.6;
       }
-
-      .sidebar-top h1 {
-        font-family: var(--font-serif);
-        font-size: 3rem;
-        margin: 0 0 15px 0;
-        font-weight: 800;
-        line-height: 0.9;
-        letter-spacing: -1px;
-      }
       
-      .sidebar-top h1 a { 
-        color: var(--color-text); 
-        text-decoration: none; 
-      }
-      
-      .sidebar-desc {
+      .info-desc {
         color: var(--color-sub);
-        margin-bottom: 40px;
-        font-size: 0.7rem;
       }
 
-      .sidebar-nav {
+      .info-nav {
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        margin-bottom: 40px;
+        gap: 8px;
       }
       
-      .sidebar-nav a {
+      .info-nav a {
         color: var(--color-text);
         text-decoration: none;
         text-transform: uppercase;
@@ -108,60 +117,70 @@
         letter-spacing: 0.5px;
       }
       
-      .sidebar-nav a:hover { opacity: 0.5; }
-      .sidebar-nav a span { color: var(--color-sub); font-size: 0.6rem; }
+      .info-nav a:hover { opacity: 0.5; }
+      .info-nav a span { color: var(--color-sub); font-size: 0.6rem; }
 
-      .sidebar-bottom {
+      .info-contact {
         display: flex;
         flex-direction: column;
         gap: 4px;
       }
 
-      .sidebar-bottom a {
+      .info-contact span {
+        color: var(--color-text);
+        font-weight: 600;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+      .info-contact a {
         color: var(--color-sub);
         text-decoration: none;
+        transition: color 0.2s;
       }
-      
-      .sidebar-bottom a:hover { color: var(--color-text); }
+      .info-contact a:hover { color: var(--color-text); }
 
       /* Right Content Area */
       .main-content {
         flex: 1;
-        padding-left: 60px;
         display: flex;
         flex-direction: column;
+        padding: 50px 60px 50px 0;
       }
 
       @media (max-width: 900px) {
-        .academic-layout { flex-direction: column; padding: 30px 20px; }
-        .sidebar { width: 100%; height: auto; position: relative; top: 0; margin-bottom: 50px; }
-        .sidebar-bottom { margin-top: 30px; }
-        .main-content { padding-left: 0; }
+        .academic-layout { flex-direction: column; padding: 0; }
+        .sidebar-spacer { display: none; }
+        .bottom-left-anchor { position: relative; bottom: 0; left: 0; padding: 40px; }
+        .main-content { padding: 20px; }
       }
     </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}">
     <div class="academic-layout">
-      <!-- Mega Style Left Minimal Intro -->
-      <aside class="sidebar">
-        <div class="sidebar-top">
-          <h1><a href="{{ '/' | absolute_url }}">P<br>J<br>Y.</a></h1>
-        </div>
+      <!-- Spacer for flex main content -->
+      <div class="sidebar-spacer"></div>
+
+      <!-- Real fixed content -->
+      <aside class="bottom-left-anchor">
+        <h1 class="site-logo">
+          <a href="{{ '/' | absolute_url }}">P<br>J<br>Y.</a>
+        </h1>
         
-        <div class="sidebar-bottom">
-          <div class="sidebar-desc">
+        <div class="info-group">
+          <div class="info-desc">
             대한민국에서 사이버 보안을 공부 중인 학생입니다.<br>
             시스템 보안을 전공하며 AI, 클라우드 및 최신 보안 기술에 주력하고 있습니다.
           </div>
           
-          <nav class="sidebar-nav">
+          <nav class="info-nav">
             <a href="{{ '/' | relative_url }}"><span>01</span> Research</a>
             <a href="{{ '/papers/' | relative_url }}"><span>02</span> Publications</a>
           </nav>
 
-          <div class="sidebar-contact" style="display: flex; flex-direction: column; gap: 4px;">
-            <span style="color: var(--color-text); font-weight: 600; margin-bottom: 5px;">CONTACT & SOCIAL</span>
+          <div class="info-contact">
+            <span>CONTACT & SOCIAL</span>
             <a href="mailto:pjy010218@gmail.com">pjy010218@gmail.com</a>
             <a href="https://github.com/pjy010218" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/준영-박-0414623a0/" target="_blank">LinkedIn</a>
