@@ -1,26 +1,42 @@
 ---
 layout: page
-title: Papers
+title: Publications
 permalink: /papers/
 ---
 
-<div class="papers-page-wrapper" style="font-family: 'Crimson Pro', serif;">
-
-  <section style="margin-bottom: 50px;">
-    <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: #999; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 20px;">
-      Selected Publications
+<section class="publications-academic">
+  <div class="pubs-header-container" style="text-align: right; margin-bottom: 60px; border-bottom: 1px solid var(--color-border); padding-bottom: 20px;">
+    <h2 style="font-family: var(--font-serif); font-size: clamp(3rem, 6vw, 5rem); margin: 0; font-weight: 800; line-height: 1; color: var(--color-text); letter-spacing: -1px;">
+      PUBLICATIONS
     </h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 15px;">
-      {% for pub in site.data.publications %}
-      <div style="border: 1px solid #d1d1ca; padding: 15px; background: #fff; min-height: 110px; display: flex; flex-direction: column; justify-content: space-between;">
-        <div>
-          <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.55rem; background: #222; color: #fff; padding: 2px 6px; margin-bottom: 8px; display: inline-block;">PUB</span>
-          <h3 style="font-size: 1rem; margin: 0; font-weight: 600; line-height: 1.3;">{{ pub.title }}</h3>
-        </div>
-        <a href="{{ pub.url | relative_url }}" target="_blank" style="font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: #0044cc; text-decoration: none; margin-top: 10px;">[ ACCESS PDF ]</a>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
+    <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-sub); text-transform: uppercase;">
+      Official Academic Works
+    </span>
+  </div>
 
-</div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+    {% for pub in site.data.publications %}
+    <div style="padding: 35px; background: #fff; border: 1px solid var(--color-border); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease;">
+      <div>
+        <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--color-sub); text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 1px;">
+          {{ pub.date | default: 'ISSUED' }}
+        </span>
+        <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 0; font-weight: 600; line-height: 1.35; color: var(--color-text);">
+          {{ pub.title }}
+        </h3>
+      </div>
+      <a href="{{ pub.url | relative_url }}" target="_blank" style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-text); text-decoration: none; margin-top: 35px; display: inline-block; border-bottom: 1px solid var(--color-border); padding-bottom: 3px; width: max-content; font-weight: 600;">
+        ACCESS PDF &rarr;
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <style>
+    .publications-academic > div > div:hover {
+       transform: translateY(-5px);
+       border-color: var(--color-text);
+       box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+  </style>
+</section>

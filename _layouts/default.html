@@ -22,96 +22,154 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | absolute_url }}">
     <meta http-equiv="cleartype" content="on">
 
-    {% if site.tags != "" %}
-      {% include collecttags.html %}
-    {% endif %}
-
+    <!-- Academic & Editorial Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,800;1,400&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <style>
-      /* Vault-0 Minimalist Theme Overrides */
-      body { background-color: #f5f5f0; margin: 0; color: #222; font-family: 'Crimson Pro', serif; }
+      :root {
+        --color-bg: #f5f5f0;
+        --color-text: #222222;
+        --color-sub: #777777;
+        --color-border: #dcdccb;
+        --color-accent: #000000;
+        --font-serif: 'Crimson Pro', serif;
+        --font-mono: 'JetBrains Mono', monospace;
+      }
       
-      .journal-container { 
-        max-width: 780px; 
-        margin: 0 auto; 
-        background: #ffffff; 
-        min-height: 100vh; 
-        padding: 30px 40px; 
-        border-left: 1px solid #d1d1ca; 
-        border-right: 1px solid #d1d1ca; 
-        box-sizing: border-box; 
+      body { 
+        background-color: var(--color-bg); 
+        color: var(--color-text); 
+        margin: 0; 
+        font-family: var(--font-serif);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
       }
 
-      /* 간결한 헤더 구성 */
-      header { 
-        border-bottom: 1.5px solid #222; 
-        margin-bottom: 30px; 
-        padding-bottom: 15px; 
-        display: flex; 
-        align-items: center; 
-        gap: 15px; 
+      .academic-layout {
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 50px 60px;
       }
-      .header-image img { width: 55px; height: 55px; border: 1px solid #eee; flex-shrink: 0; }
-      
-      .header-content h1 { font-size: 1.5rem; margin: 0; font-weight: 600; line-height: 1.2; }
-      .header-content h1 a { color: #222; text-decoration: none; }
-      .header-content p { font-style: italic; color: #777; margin: 2px 0 6px 0; font-size: 0.9rem; }
 
-      /* SNS 링크 스타일 지정 */
-      .social-links { display: flex; gap: 12px; margin-bottom: 8px; font-size: 0.9rem; }
-      .social-links a { color: #666; text-decoration: none; transition: color 0.2s; }
-      .social-links a:hover { color: #0044cc; }    
-      
-      .nav-links { font-family: 'JetBrains Mono', monospace; display: flex; gap: 15px; font-size: 0.7rem; text-transform: uppercase; }
-      .nav-links a { color: #0044cc; text-decoration: none; font-weight: 500; }
-      .nav-links a:hover { text-decoration: underline; }
+      /* Fixed Minimal Left Rail */
+      .sidebar {
+        width: 250px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: sticky;
+        top: 50px;
+        height: calc(100vh - 100px);
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        line-height: 1.6;
+      }
 
-      /* 푸터 미니멀화 */
-      footer { 
-        margin-top: 60px; 
-        border-top: 1px solid #eee; 
-        padding-top: 15px; 
-        font-family: 'JetBrains Mono', monospace; 
-        font-size: 0.7rem; 
-        color: #aaa; 
+      .sidebar-top h1 {
+        font-family: var(--font-serif);
+        font-size: 3rem;
+        margin: 0 0 15px 0;
+        font-weight: 800;
+        line-height: 0.9;
+        letter-spacing: -1px;
+      }
+      
+      .sidebar-top h1 a { 
+        color: var(--color-text); 
+        text-decoration: none; 
+      }
+      
+      .sidebar-desc {
+        color: var(--color-sub);
+        margin-bottom: 40px;
+        font-size: 0.7rem;
+      }
+
+      .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      .sidebar-nav a {
+        color: var(--color-text);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: opacity 0.2s;
+        letter-spacing: 0.5px;
+      }
+      
+      .sidebar-nav a:hover { opacity: 0.5; }
+      .sidebar-nav a span { color: var(--color-sub); font-size: 0.6rem; }
+
+      .sidebar-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .sidebar-bottom a {
+        color: var(--color-sub);
+        text-decoration: none;
+      }
+      
+      .sidebar-bottom a:hover { color: var(--color-text); }
+
+      /* Right Content Area */
+      .main-content {
+        flex: 1;
+        padding-left: 60px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (max-width: 900px) {
+        .academic-layout { flex-direction: column; padding: 30px 20px; }
+        .sidebar { width: 100%; height: auto; position: relative; top: 0; margin-bottom: 50px; }
+        .sidebar-bottom { margin-top: 30px; }
+        .main-content { padding-left: 0; }
       }
     </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}">
-    <div class="journal-container">
-      
-      <header>
-        <div class="header-image">
-          <a href="{{ '/' | absolute_url }}">
-            <img src="{{ site.favicon }}" alt="Logo">
-          </a>
-        </div>
-        <div class="header-content">
-          <h1><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></h1>
-          <p>{{ site.description }}</p>
-
-          <div class="social-links">
-            <a href="https://github.com/pjy010218" target="_blank" title="Github"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/준영-박-0414623a0/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-            <a href="mailto:pjy010218@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
+    <div class="academic-layout">
+      <!-- Mega Style Left Minimal Intro -->
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <h1><a href="{{ '/' | absolute_url }}">P<br>J<br>Y.</a></h1>
+          <div class="sidebar-desc">
+            대한민국에서 사이버 보안을 공부 중인 학생입니다.<br>
+            시스템 보안을 전공하며 AI, 클라우드 및 최신 보안 기술에 주력하고 있습니다.
           </div>
           
-          <nav class="nav-links">
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/blog/' | relative_url }}">Blog</a>
-            <a href="{{ '/papers/' | relative_url }}">Papers</a>
+          <nav class="sidebar-nav">
+            <a href="{{ '/' | relative_url }}"><span>01</span> Research</a>
+            <a href="{{ '/papers/' | relative_url }}"><span>02</span> Publications</a>
           </nav>
         </div>
-      </header>
+        
+        <div class="sidebar-bottom">
+          <span style="color: var(--color-text); font-weight: 600; margin-bottom: 5px;">CONTACT & SOCIAL</span>
+          <a href="mailto:pjy010218@gmail.com">pjy010218@gmail.com</a>
+          <a href="https://github.com/pjy010218" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/준영-박-0414623a0/" target="_blank">LinkedIn</a>
+        </div>
+      </aside>
 
-      <main>
+      <!-- Cascading Content Right Area -->
+      <main class="main-content">
         {{ content }}
       </main>
-
-      <footer>
-        <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
-        <span style="float: right; text-transform: uppercase;">Vault-0 Minimalist Archive</span>
-      </footer>
     </div>
 
     <script src="{{ '/compressed.js' | absolute_url }}"></script>
