@@ -106,3 +106,5 @@ exclude:
          - node_modules
          - gulpfile.js
          - package.json      
+         - _papers/template
+         - _papers/.obsidian
