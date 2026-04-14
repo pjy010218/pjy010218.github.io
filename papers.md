@@ -27,6 +27,9 @@ permalink: /papers/
         <p style="font-family: var(--font-sans); font-size: 0.9rem; color: #666; margin-top: 10px; line-height: 1.5;">
           {{ pub.author }}
         </p>
+        <p style="font-family: var(--font-sans); font-size: 0.9rem; color: #666; margin-top: 10px; line-height: 1.5;">
+          {{ pub.conference }}
+        </p>
       </div>
       <a href="{{ pub.url | relative_url }}" target="_blank" style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-text); text-decoration: none; margin-top: 35px; display: inline-block; border-bottom: 1px solid var(--color-border); padding-bottom: 3px; width: max-content; font-weight: 600;">
         ACCESS PDF &rarr;
