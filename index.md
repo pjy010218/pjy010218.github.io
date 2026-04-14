@@ -42,14 +42,12 @@ layout: home
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 100px;
-    /* Apply 3D Perspective Context */
-    perspective: 1200px;
-    perspective-origin: right center;
   }
 
   .mega-log {
     transition: margin 0.3s ease;
-    transform-style: preserve-3d;
+    position: relative;
+    z-index: 1;
   }
 
   /* Right-aligned staggered cascading visually mapped via MARGIN to fix hitboxes */
@@ -78,9 +76,9 @@ layout: home
     word-break: keep-all; 
     overflow-wrap: break-word;
 
-    /* 3D Slant Transform */
+    /* Local 3D Transform to prevent vanishing point shifting */
     transform-origin: right center;
-    transform: rotateY(-8deg) rotateX(2deg) translateZ(0);
+    transform: perspective(1200px) rotateY(-8deg) rotateX(2deg);
     transition: color 0.4s ease, transform 0.4s ease, text-shadow 0.4s ease;
     text-shadow: -2px 2px 5px rgba(0,0,0,0.02), -5px 5px 15px rgba(0,0,0,0.02);
   }
@@ -91,8 +89,9 @@ layout: home
 
   .mega-title:hover {
     color: var(--color-sub);
-    transform: rotateY(-3deg) rotateX(1deg) scale(0.99) translateZ(10px);
+    transform: perspective(1200px) rotateY(-3deg) rotateX(1deg) scale(0.99);
     text-shadow: -3px 3px 10px rgba(0,0,0,0.05);
+    z-index: 10;
   }
 
   .mega-meta {
@@ -103,20 +102,20 @@ layout: home
     letter-spacing: 0.1em;
     margin-top: 15px;
     font-weight: 400;
-    transform: translateZ(20px); /* slightly detach meta info visually if rendering in 3d */
   }
 
   /* When expanded, lock it cleanly and flatten the 3D */
   .mega-log[open] {
     margin: 40px 0;
+    z-index: 5;
   }
   
   .mega-log[open] .mega-title {
     padding-bottom: 30px;
     margin-bottom: 0px; 
     color: var(--color-accent);
-    /* Flatten the 3D effect temporarily when reading so it isn't distracting */
-    transform: rotateY(0) rotateX(0) translateZ(0); 
+    /* Flatten local 3D effect temporarily */
+    transform: perspective(1200px) rotateY(0) rotateX(0); 
     text-shadow: none;
   }
 
@@ -130,6 +129,7 @@ layout: home
     border: 1px solid var(--color-border);
     box-shadow: 0 15px 40px rgba(0,0,0,0.04);
     animation: slideInDown 0.3s ease-out;
+    position: relative;
   }
 
   .mega-content h1, .mega-content h2, .mega-content h3 {
