@@ -2,7 +2,8 @@
 layout: home
 ---
 <div class="research-megalith">
-  {% assign research_logs = site.papers | sort: "date" | reversed %}
+  /* Fetch and map newest first using title (which tracks dates) and reverse filter */
+  {% assign research_logs = site.papers | sort: "title" | reverse %}
   
   {% for log in research_logs %}
     {% assign title_len = log.title | size %}
