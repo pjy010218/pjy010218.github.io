@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "2026-02-05-HorizontalPolicyPropagation.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-11-08-Survey1"
+              "title": "2026-02-05-HorizontalPolicyPropagation"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "2026-02-05-HorizontalPolicyPropagation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-11-08-Survey1 의 백링크"
+              "title": "2026-02-05-HorizontalPolicyPropagation 의 백링크"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "2026-02-05-HorizontalPolicyPropagation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025-11-08-Survey1 의 나가는 링크"
+              "title": "2026-02-05-HorizontalPolicyPropagation 의 나가는 링크"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "2026-02-05-HorizontalPolicyPropagation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-11-08-Survey1 의 개요"
+              "title": "2026-02-05-HorizontalPolicyPropagation 의 개요"
             }
           }
         ]
@@ -187,15 +187,15 @@
   },
   "active": "a1c636b249c2aaef",
   "lastOpenFiles": [
+    "2025-11-22-FuzzingForDA3.md",
+    "2025-11-22-FuzzingForDA2.md",
+    "2025-11-21-FuzzingForDA1.md",
     "2025-11-12-Survey2.md",
     "2025-11-08-Survey1.md",
     "무제.md",
     "2026-02-05-HorizontalPolicyPropagation.md",
     "2026-02-05-HorizontalPolicyPropagation (2).md",
-    "2025-11-22-FuzzingForDA3.md",
     "template/research_log.md",
-    "template",
-    "2025-11-22-FuzzingForDA2.md",
-    "2025-11-21-FuzzingForDA1.md"
+    "template"
   ]
 }

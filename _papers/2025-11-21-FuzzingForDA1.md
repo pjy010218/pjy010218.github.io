@@ -1,6 +1,6 @@
 ---
 seotitle: Fuzzing for Digital Artifacts -1-
-title: "Fuzzing for Digital Artifacts (1)"
+title: "Fuzzing for Digital Artifact Discovery"
 description: This is a journal on writing a research paper on acquiring user-application-related digital artifacts based on fuzzing methods.
 author: Junyeong Park
 type: post
@@ -9,9 +9,9 @@ sitemap:
   lastmod: 2025-11-21
 url: /papers/fuzzing-DAs-1
 tags:
-  - research
   - Fuzzing
   - Digital Artifacts
+  - research
 ---
 
 ### Fuzzing for Digital Artifacts (1)

@@ -1,6 +1,6 @@
 ---
 seotitle: Horizontal Policy Propagation (1)
-title: Horizontal Policy Propagation (1)
+title: Toward a Bio-Inspired Immune System for Cloud Microservices
 description: This is an ongoing log for research & development for the Horizontal Policy Propagation research.
 author: Junyeong Park
 type: post
@@ -10,6 +10,7 @@ sitemap:
 url: /papers/HPP-1
 tags:
   - Horizontal Policy Propagation
+  - Bio-Inspired Microservice Security
 ---
 It's been a while since I've written a research log. It's not that I've been inattentive or careless to work the past couple of months. Research was ongoing as always, just not the documenting.<br>
 So, I have some updates on some of the things I've been doing, and as one can already notice, I have a new paper on the way and this is the scope I'm going to be talking about in this log.<br>
