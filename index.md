@@ -75,9 +75,9 @@ layout: home
 
     /* 3D Slant Transform */
     transform-origin: right center;
-    transform: rotateY(18deg) rotateX(4deg) translateZ(0);
+    transform: rotateY(-8deg) rotateX(2deg) translateZ(0);
     transition: color 0.4s ease, transform 0.4s ease, text-shadow 0.4s ease;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.05), 10px 10px 20px rgba(0,0,0,0.03);
+    text-shadow: -2px 2px 5px rgba(0,0,0,0.02), -5px 5px 15px rgba(0,0,0,0.02);
   }
   
   .mega-title::-webkit-details-marker {
@@ -86,8 +86,8 @@ layout: home
 
   .mega-title:hover {
     color: var(--color-sub);
-    transform: rotateY(5deg) rotateX(2deg) scale(0.98) translateZ(50px);
-    text-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    transform: rotateY(-3deg) rotateX(1deg) scale(0.99) translateZ(10px);
+    text-shadow: -3px 3px 10px rgba(0,0,0,0.05);
   }
 
   .mega-meta {
