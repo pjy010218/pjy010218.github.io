@@ -13,6 +13,16 @@
   url: "/assets/pdfs/A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection.pdf"
   date: "2025/11/04"
 
+- title: "MP FUSE: 리눅스 FUSE 기반 메타모픽/폴리모픽 변이 기술"
+  conference: "한국정보보호학회 동계학술대회 (25-CISC'W)"
+  url: "/assets/pdfs/MP FUSE_ 리눅스 FUSE 기반 메타모픽_폴리모픽 변이 기술.pdf"
+  date: "2025/11/27"
+
+- title: "안티탬퍼링 시나리오 기반의 VFS 조사 및 식별"
+  conference: "한국정보보호학회 동계학술대회 (25-CISC'W)"
+  url: "/assets/pdfs/안티탬퍼링 시나리오 기반의 VFS 조사 및 식별.pdf"
+  date: "2025/11/27"
+
 - title: "LLM의 민감 정보 유출 방지 기술의 동향과 한계"
   conference: "한국인터넷정보학회 춘계학술발표대회 (26-KSII'S)"
   url: "/assets/pdfs/LLM의 민감 정보 유출 방지 기술의 동향과 한계.pdf"
