@@ -14,8 +14,7 @@ tags:
   - research
 ---
 
-### Fuzzing for Digital Artifacts (3)
-<br>
+### Reinforcement Learning Meets Fuzzing for Artifact Discovery
 
 I've updated the fuzzer to be *'smarter'*.<br>
 Here are some of the updates.<br>

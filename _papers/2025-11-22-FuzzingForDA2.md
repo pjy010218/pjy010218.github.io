@@ -14,8 +14,7 @@ tags:
   - research
 ---
 
-### Fuzzing for Digital Artifacts (2)
-<br
+### From PoC to Pipeline: Advancing Fuzzing for Digital Artifacts
 
 So I've created a PoC project that extracts which files a 'mousepad' program uses/modifies via eBPF tracing,<br>
 executes the "Save" action to represent user action, and save every trace into a designated json file.<br>

@@ -52,18 +52,23 @@ layout: home
     transform-style: preserve-3d;
   }
 
-  /* Right-aligned staggered cascading visually */
-  .mega-log:nth-child(5n+1) .mega-title { padding-right: 0%; text-align: right; }
-  .mega-log:nth-child(5n+2) .mega-title { padding-right: 6%; text-align: right; }
-  .mega-log:nth-child(5n+3) .mega-title { padding-right: 2%; text-align: right; }
-  .mega-log:nth-child(5n+4) .mega-title { padding-right: 10%; text-align: right; }
-  .mega-log:nth-child(5n+5) .mega-title { padding-right: 4%; text-align: right; }
+  /* Right-aligned staggered cascading visually mapped via MARGIN to fix hitboxes */
+  .mega-log:nth-child(5n+1) .mega-title { margin-right: 0%; }
+  .mega-log:nth-child(5n+2) .mega-title { margin-right: 6%; }
+  .mega-log:nth-child(5n+3) .mega-title { margin-right: 2%; }
+  .mega-log:nth-child(5n+4) .mega-title { margin-right: 10%; }
+  .mega-log:nth-child(5n+5) .mega-title { margin-right: 4%; }
 
   .mega-title {
     display: block;
+    width: max-content;
+    max-width: 100%;
+    margin-left: auto;
+    text-align: right;
+    
     cursor: pointer;
     list-style: none; /* Make details marker disappear */
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
     font-family: var(--font-serif);
     font-weight: 800;
     letter-spacing: -0.04em;

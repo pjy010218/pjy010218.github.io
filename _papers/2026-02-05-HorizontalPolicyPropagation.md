@@ -12,6 +12,8 @@ tags:
   - Horizontal Policy Propagation
   - Bio-Inspired Microservice Security
 ---
+### Toward a Bio-Inspired Immune System for Cloud Microservices
+
 It's been a while since I've written a research log. It's not that I've been inattentive or careless to work the past couple of months. Research was ongoing as always, just not the documenting.<br>
 So, I have some updates on some of the things I've been doing, and as one can already notice, I have a new paper on the way and this is the scope I'm going to be talking about in this log.<br>
 I like interdisciplinary research. New knowledge from other disciplines, diffferent ways of solving problems are what intrigues me in my own research, and when one way of solving a certain problem is applied to another problem of a completely different field, I believe it provides incredible insight in new ways.<br>

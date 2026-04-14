@@ -14,8 +14,7 @@ tags:
   - research
 ---
 
-### Fuzzing for Digital Artifacts (1)
-<br
+### Fuzzing for Digital Artifact Discovery
 
 A thought occurred to me.<br>
 Fuzzers are brute forcing every crash, every error a software could have.<br>
