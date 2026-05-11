@@ -6,23 +6,21 @@ author: Junyeong Park
 type: post
 updated: <% tp.date.now("YYYY-MM-DD") %>
 sitemap:
-  lastmod: <% tp.date.now("YYYY-MM-DD") %>
+    lastmod: <% tp.date.now("YYYY-MM-DD") %>
 url: /papers/<% tp.file.title.replace(/\s+/g, '-').toLowerCase() %>
 tags:
-  - research
-  - log
+    - research
+    - log
 research_stage: idea
-related: ["Ongoing Research"]
+related: ["Capstone Design"]
 paper_pdf: ""
 ---
-
 
 ---
 
 **<% tp.date.now("YYYY-MM-DD") %>**  
 <br>
 **Junyeong Park**
-
 
 ---
 

@@ -34,21 +34,9 @@
               "icon": "lucide-file",
               "title": "2026-05-11-CapstoneDesign_2"
             }
-          },
-          {
-            "id": "e3f8cd3a40a1bf35",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "릴리즈 노트 1.12.7"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -211,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e3f8cd3a40a1bf35",
+  "active": "1e33ca90238490bb",
   "lastOpenFiles": [
     "update_ongoing.py",
     "2026-02-05-HorizontalPolicyPropagation.md",
