@@ -23,7 +23,7 @@ So this year, our team (4 man team of highly intelligent students) chose to work
 To be honest, this was a very new field for me, but it was indeed exciting rather than scary. It was the perfect opportunity to study the new emerging technology, and get to explore the security aspects of it.<br>
 It's actually been a month since this project has started, and suprisingly enough, we think we're making some progress.<br>
 Of course, the given timeline of less than 3 months is the key factor in our fast progress, but our idea and product seems to be "acceptable". But more about this later.<br>
-Next, I'll give a spec
+Next, I'll give a detailed description on what we are actually trying to build, what we've done so far, and what's going on.
 
 ---
 **<% tp.date.now("YYYY-MM-DD") %>**  
