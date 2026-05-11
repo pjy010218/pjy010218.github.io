@@ -25,10 +25,14 @@
             "id": "1e33ca90238490bb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "2026-04-25-CapstoneDesign_1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-25-CapstoneDesign_1"
             }
           }
         ],
@@ -192,13 +196,15 @@
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "bases:새 베이스 생성하기": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "1e33ca90238490bb",
   "lastOpenFiles": [
-    "2026-04-25-CapstoneDesign_1.md",
     "2026-05-11-CapstoneDesign_2.md",
+    "2026-04-25-CapstoneDesign_1.md",
+    "template/research_log.md",
     "update_ongoing.py",
     "2026-02-05-HorizontalPolicyPropagation.md",
     "2025-11-08-Survey1.md",
@@ -209,7 +215,6 @@
     "2025-11-12-Survey2.md",
     "2025-11-21-FuzzingForDA1.md",
     "2025-11-22-FuzzingForDA2.md",
-    "template/research_log.md",
     "2026-02-05-HorizontalPolicyPropagation (2).md",
     "template"
   ]

@@ -12,7 +12,7 @@ tags:
     - capstone
     - DLP
 research_stage: idea
-related: ["Capstone Design"]
+related: ["Capstone_Design.md"]
 paper_pdf: ""
 ---
 
