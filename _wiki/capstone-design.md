@@ -23,8 +23,8 @@ Welcome to the Wiki page for **Capstone Design**. This page serves as a centrali
 
 ## Related Publishment
 
-![[LLM의_민감_정보_유출_방지_기술의_동향과_한계]]
-![[에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석]]
+- [LLM의 민감 정보 유출 방지 기술의 동향과 한계](/wiki/LLM의_민감_정보_유출_방지_기술의_동향과_한계/)
+- [에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석](/wiki/에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석/)
 
 
 
