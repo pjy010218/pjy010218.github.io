@@ -2,9 +2,16 @@
 layout: home
 ---
 <div class="research-megalith">
-  {% assign research_logs = site.papers | sort: "title" | reverse %}
+  {% assign grouped_logs = site.papers | group_by_exp: "log", "log.related.first | default: 'Ongoing Research'" %}
   
-  {% for log in research_logs %}
+  {% for group in grouped_logs %}
+    <h2 class="publishment-group-title" style="text-align: right; font-family: var(--font-serif); font-size: clamp(1.5rem, 3vw, 2.5rem); color: var(--color-sub); margin-top: 80px; margin-bottom: 30px; border-bottom: 1px solid var(--color-border); padding-bottom: 15px; letter-spacing: -0.02em;">
+      {{ group.name | replace: '[[', '' | replace: ']]', '' | replace: '.pdf', '' }}
+    </h2>
+    
+    {% assign research_logs = group.items | sort: "title" | reverse %}
+    
+    {% for log in research_logs %}
     {% assign title_len = log.title | size %}
     {% if title_len < 15 %}
        {% assign fsize = "clamp(4.5rem, 9vw, 8rem)" %}
@@ -29,9 +36,10 @@ layout: home
          {{ log.content }}
       </div>
     </details>
+    {% endfor %}
   {% endfor %}
 
-  {% if research_logs.size == 0 %}
+  {% if site.papers.size == 0 %}
     <h2 style="font-size: 3rem; text-align: right; margin-top: 100px; color: #aaa;">NO LOGS YET.</h2>
   {% endif %}
 </div>
@@ -51,11 +59,11 @@ layout: home
   }
 
   /* Right-aligned staggered cascading visually mapped via MARGIN to fix hitboxes */
-  .mega-log:nth-child(5n+1) .mega-title { margin-right: 0%; }
-  .mega-log:nth-child(5n+2) .mega-title { margin-right: 6%; }
-  .mega-log:nth-child(5n+3) .mega-title { margin-right: 2%; }
-  .mega-log:nth-child(5n+4) .mega-title { margin-right: 10%; }
-  .mega-log:nth-child(5n+5) .mega-title { margin-right: 4%; }
+  .mega-log:nth-of-type(5n+1) .mega-title { margin-right: 0%; }
+  .mega-log:nth-of-type(5n+2) .mega-title { margin-right: 6%; }
+  .mega-log:nth-of-type(5n+3) .mega-title { margin-right: 2%; }
+  .mega-log:nth-of-type(5n+4) .mega-title { margin-right: 10%; }
+  .mega-log:nth-of-type(5n+5) .mega-title { margin-right: 4%; }
 
   .mega-title {
     display: block;
