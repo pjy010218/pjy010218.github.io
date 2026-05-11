@@ -11,11 +11,17 @@ url: /papers/<% tp.file.title.replace(/\s+/g, '-').toLowerCase() %>
 tags:
   - research
   - log
-
 research_stage: idea
-related: ["Ongoing Research"]
+related: []
 paper_pdf: ""
 ---
+
+
+---
+
+**<% tp.date.now("YYYY-MM-DD") %>**  
+<br>
+**Junyeong Park**
 
 
 ---

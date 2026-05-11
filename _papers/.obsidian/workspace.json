@@ -13,15 +13,42 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "2026-02-05-HorizontalPolicyPropagation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-11-08-Survey1"
+              "title": "2026-02-05-HorizontalPolicyPropagation"
+            }
+          },
+          {
+            "id": "1e33ca90238490bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-05-11-CapstoneDesign_2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-05-11-CapstoneDesign_2"
+            }
+          },
+          {
+            "id": "e3f8cd3a40a1bf35",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.12.7"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -44,7 +71,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -174,20 +201,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04233d41b1cf7ffc",
+  "active": "e3f8cd3a40a1bf35",
   "lastOpenFiles": [
+    "2026-02-05-HorizontalPolicyPropagation.md",
+    "2026-05-11-CapstoneDesign_2.md",
     "2025-11-08-Survey1.md",
     "2025-11-12-Survey2.md",
-    "2026-02-05-HorizontalPolicyPropagation.md",
     "2025-11-22-FuzzingForDA3.md",
     "2025-11-21-FuzzingForDA1.md",
     "2025-11-22-FuzzingForDA2.md",
