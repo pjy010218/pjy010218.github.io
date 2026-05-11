@@ -12,7 +12,7 @@ tags:
     - capstone
     - log
 research_stage: idea
-related: ["Capstone_Design.md"]
+related: ["Capstone Design"]
 paper_pdf: ""
 ---
 

@@ -6,14 +6,13 @@ author: Junyeong Park
 type: post
 updated: 2026-04-25
 sitemap:
-  lastmod: 2026-04-25
+    lastmod: 2026-04-25
 url: /papers/2026-04-25-CapstoneDesign_1
 tags:
-  - capstone
-  - DLP
+    - capstone
+    - DLP
 research_stage: idea
-related:
-  - Capstone_Design.md
+related: ["Capstone Design"]
 paper_pdf: ""
 ---
 
