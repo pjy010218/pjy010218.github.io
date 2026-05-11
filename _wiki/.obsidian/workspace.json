@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ongoing-research.md",
+                "file": "capstone-design.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ongoing-research"
+              "title": "capstone-design"
             }
           }
         ]
@@ -185,11 +185,11 @@
   },
   "active": "d4f906e78accb3a8",
   "lastOpenFiles": [
+    "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
+    "LLM의_민감_정보_유출_방지_기술의_동향과_한계.md",
+    "ongoing-research.md",
     "Capstone_Design.md",
     "capstone-design.md",
-    "ongoing-research.md",
-    "LLM의_민감_정보_유출_방지_기술의_동향과_한계.md",
-    "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
     "assets/pdfs/KSII'S_LLM의_민감_정보_유출_방지_기술의_동향과_한계.pdf.md",
     "assets/pdfs",
     "assets",
