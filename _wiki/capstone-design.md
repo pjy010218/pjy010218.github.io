@@ -8,11 +8,13 @@ description: "Wiki introduction page for Capstone Design"
 
 Welcome to the Wiki page for **Capstone Design**. This page serves as a centralized introduction and index for all related research logs and artifacts.
 
-You can freely edit this page in Obsidian or any text editor to add your introduction, methodology, and key findings.
+
 
 ## Related Publishment
 
-No PDF available yet.
+[Download / View PDF](/assets/pdfs/KSII'S_LLM의_민감_정보_유출_방지_기술의_동향과_한계.pdf)
+  
+![[/assets/pdfs/KSII'S_LLM의_민감_정보_유출_방지_기술의_동향과_한계.pdf]]
 
 
 

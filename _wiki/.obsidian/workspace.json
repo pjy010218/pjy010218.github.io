@@ -1,52 +1,41 @@
 {
   "main": {
-    "id": "875610f2e0dcb213",
+    "id": "8fd21d796e3f5651",
     "type": "split",
     "children": [
       {
-        "id": "b40036a9ecd7d1c4",
+        "id": "adc1952e782c0e6e",
         "type": "tabs",
         "children": [
           {
-            "id": "a1c636b249c2aaef",
+            "id": "8d205549100650d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-02-05-HorizontalPolicyPropagation.md",
+                "file": "capstone-design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-05-HorizontalPolicyPropagation"
-            }
-          },
-          {
-            "id": "1e33ca90238490bb",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "title": "capstone-design"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "cc762d1188d61c49",
+    "id": "164fadf05eeabe96",
     "type": "split",
     "children": [
       {
-        "id": "dbf490680395701e",
+        "id": "c1806abd1cf330b7",
         "type": "tabs",
         "children": [
           {
-            "id": "04233d41b1cf7ffc",
+            "id": "f5893a482dd21555",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -59,7 +48,7 @@
             }
           },
           {
-            "id": "9695336d3ce2c87e",
+            "id": "eae6bcc29c5eb48e",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -76,7 +65,7 @@
             }
           },
           {
-            "id": "4d945a8c7778bf67",
+            "id": "12ac2c92d5f31c45",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -92,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "12edba540a5326fb",
+    "id": "f28ff34f0469c188",
     "type": "split",
     "children": [
       {
-        "id": "73bf8985564b32b5",
+        "id": "cfef4cecf7b01cb9",
         "type": "tabs",
         "children": [
           {
-            "id": "eba2c14ef58bcd82",
+            "id": "64c211a3d6678aeb",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "capstone-design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-11-08-Survey1 의 백링크"
+              "title": "capstone-design 의 백링크"
             }
           },
           {
-            "id": "07a8b8eb38844d6e",
+            "id": "e458696c32c6fab5",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "capstone-design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025-11-08-Survey1 의 나가는 링크"
+              "title": "capstone-design 의 나가는 링크"
             }
           },
           {
-            "id": "6f9f72fbf8be0da4",
+            "id": "93c6aec0798e5ed3",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -148,7 +137,7 @@
             }
           },
           {
-            "id": "64b520f90698d3ad",
+            "id": "0dd1b243dac5cfaf",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -162,18 +151,18 @@
             }
           },
           {
-            "id": "b5a049a33ade6e6c",
+            "id": "cf90351d8ca19278",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "capstone-design.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-11-08-Survey1 의 개요"
+              "title": "capstone-design 의 개요"
             }
           }
         ]
@@ -191,23 +180,15 @@
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
-      "obsidian-git:Open Git source control": false
+      "bases:새 베이스 생성하기": false
     }
   },
-  "active": "1e33ca90238490bb",
+  "active": "8d205549100650d0",
   "lastOpenFiles": [
-    "2026-05-11-CapstoneDesign_2.md",
-    "update_ongoing.py",
-    "2026-02-05-HorizontalPolicyPropagation.md",
-    "2025-11-08-Survey1.md",
-    "2025-11-12-Survey2.md",
-    "2025-11-22-FuzzingForDA3.md",
-    "2025-11-21-FuzzingForDA1.md",
-    "2025-11-22-FuzzingForDA2.md",
-    "template/research_log.md",
-    "무제.md",
-    "2026-02-05-HorizontalPolicyPropagation (2).md",
-    "template"
+    "assets/pdfs/KSII'S_LLM의_민감_정보_유출_방지_기술의_동향과_한계.pdf.md",
+    "assets/pdfs",
+    "assets",
+    "capstone-design.md",
+    "KSII'S_LLM의_민감_정보_유출_방지_기술의_동향과_한계.pdf.md"
   ]
 }
