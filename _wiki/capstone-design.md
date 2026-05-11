@@ -11,7 +11,8 @@ Welcome to the Wiki page for **Capstone Design**. This page serves as a centrali
 
 ## Overview
 ---
-**Capstone Design** is a project-based course where students apply the knowledge and skills they learned throughout their major to solve real-world problems. Instead of only writing research papers, students work in teams to plan, design, and create practical outcomes such as prototypes, products, software, or business solutions. The program emphasizes **creativity, teamwork, leadership, and hands-on problem solving**, often in collaboration with industry needs. Many departments at Sejong University, especially in engineering and design fields, include Capstone Design as a key graduation requirement and encourage students to present their final projects in competitions or exhibitions.
+**Capstone Design** is a project-based course where students apply the knowledge and skills they learned throughout their major to solve real-world problems. Instead of only writing research papers, students work in teams to plan, design, and create practical outcomes such as prototypes, products, software, or business solutions. 
+
 
 ## Features
 
