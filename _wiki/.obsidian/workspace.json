@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
+                "file": "LLM의_민감_정보_유출_방지_기술의_동향과_한계.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석"
+              "title": "LLM의_민감_정보_유출_방지_기술의_동향과_한계"
             }
           }
         ],
@@ -200,9 +200,9 @@
   },
   "active": "d4f906e78accb3a8",
   "lastOpenFiles": [
+    "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
     "LLM의_민감_정보_유출_방지_기술의_동향과_한계.md",
     "capstone-design.md",
-    "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
     "assets/pdfs/KSII'S_LLM의_민감_정보_유출_방지_기술의_동향과_한계.pdf.md",
     "assets/pdfs",
     "assets",
