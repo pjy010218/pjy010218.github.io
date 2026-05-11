@@ -12,6 +12,8 @@ tags:
   - Fuzzing
   - Digital Artifacts
   - research
+related: ["Ongoing Research"]
+paper_pdf: ""
 ---
 
 ### Fuzzing for Digital Artifact Discovery
