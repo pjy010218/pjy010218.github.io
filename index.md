@@ -22,7 +22,8 @@ layout: home
     {% endif %}
 
     <details class="mega-log">
-      <summary class="mega-title" style="font-size: {{ fsize }}; line-height: {{ lh }};">
+      <summary class="mega-title" style="font-size: {{ fsize }}; line-height: {{ lh }}; position: relative;">
+         <a href="/wiki/{{ group_clean_name | slugify }}/" title="Read Wiki Introduction for {{ group_clean_name }}" style="position: absolute; right: 100%; top: 50%; transform: translateY(-50%); margin-right: 20px; font-size: clamp(1.5rem, 3vw, 2.5rem); text-decoration: none; transition: 0.2s opacity; opacity: 0.5;">📖</a>
          <span class="mega-text">{{ group_clean_name | upcase }}</span>
          <span class="mega-meta">[{{ group.items.size }} LOG{% if group.items.size > 1 %}S{% endif %}]</span>
       </summary>
@@ -97,6 +98,10 @@ layout: home
   
   .mega-title::-webkit-details-marker {
     display: none;
+  }
+
+  .mega-title > a:hover {
+    opacity: 1 !important;
   }
 
   .mega-title:hover {
