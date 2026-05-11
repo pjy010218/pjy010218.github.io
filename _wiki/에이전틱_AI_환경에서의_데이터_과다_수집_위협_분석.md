@@ -19,7 +19,7 @@ The study focuses on how AI agents unintentionally collect and process excessive
 Recent Agentic AI systems rely on external tools (a.k.a MCP Servers) and multi-agent collaboration to perform users' complicated tasks. But as MCP environments become more widely adopted in enterprise systems, AI agents gain access to a broad range of APIs and DBs. However, this expanded functionality also creates new security and privacy risks.<br>
 
 ![Agentic AI and the 7 Data Leak Paths](/assets/images/AgenticAI_C1-C7.png)
-*Figure 1: Agentic AI and the 7 Data Leak Paths*
+
 <br>
 This paper references three prior studies to explain these threats:<br>
 - **AgentRaft** identified that many agent tools return excessively broad data schemas instead of only the minimum required information. Since LLMs lack contextual privacy awareness, unnecessary sensitive information may be exposed or leaked during task execution.
@@ -35,12 +35,21 @@ This paper classifies MCP data retrieval tools into two categories:<br>
 <br>
 We identify Broad Read architectures as the primary source of over-collection risks. Because these tools expose unnecessary fields to the LLM, the model may either leak sensitive information directly or infer hidden information through unintended reasoning.<br>
 
-We have analyzed **seven widely used MCP servers**, including Github, Stripe, HubSpot, PostgreSQL, Supabase, and Notion MCP servers. Their investigation
+We have analyzed **seven widely used MCP servers**, including Github, Stripe, HubSpot, PostgreSQL, Supabase, and Notion MCP servers. We have found that approximately **42.8%** of MCP read tools exhibited Broad Read characteristics that inherently increase the risk of excessive data collection. Some platforms, such as HubSpot, showed especially high Broad Read rates (***almost 85%***)
+
+## 4. Limitations
+
+We highlight the practical limitations in fully replacing Broad Read systems with Atomic Read architectures:<br>
+- Excessive tool fragmentation increases management complexity.
+- Agents may incorrectly select tools among numerous fine-grained options.
+- Existing enterprise APIs and DBs are almost impossible to redesign solely for Atomic Read features.
+<br>
+As an alternative, we propose introducing a middle layer that sits between MCP servers and AI agents, and proxies all communications between the two. This layer would analyze the user's intent and contextually control unnecessary data exposure during tool interactions and from tool results.
+
 ## Related Publishment
 
 - [Download / View PDF](/assets/pdfs/CISC'S_에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.pdf)
-- ![[CISC'S_에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.pdf]]
 
 ## Notes
 
-- _Add your introductory content here._
+- **This paper won "Outstanding Paper Award (a.k.a "학회우수상")" from the Korea Institute of Information Security & Cryptology (KIISC)**
