@@ -6,7 +6,7 @@ description: "Wiki introduction page for research paper [에이전틱 AI 환경�
 
 # 에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석
 
-Welcome to the Wiki page for **에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석**.
+Welcome to the Wiki page for the research paper, **에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석**.
 
 ## 1. Overview
 
