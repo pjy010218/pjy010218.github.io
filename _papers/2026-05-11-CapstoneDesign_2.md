@@ -1,15 +1,15 @@
 ---
-seotitle: <% tp.file.title %>
-title: <% tp.file.title %>
-description: Research log for <% tp.file.title %>
+seotitle: Capstone Design 2
+title: "Capstone Design: What We've Agreed Upon"
+description: Research log for 2026-05-11-CapstoneDesign_2
 author: Junyeong Park
 type: post
-updated: <% tp.date.now("YYYY-MM-DD") %>
+updated: 2026-05-11
 sitemap:
-    lastmod: <% tp.date.now("YYYY-MM-DD") %>
-url: /papers/<% tp.file.title.replace(/\s+/g, '-').toLowerCase() %>
+    lastmod: 2026-05-11
+url: /papers/2026-05-11-capstonedesign_2
 tags:
-    - research
+    - capstone
     - log
 research_stage: idea
 related: ["Capstone Design"]
@@ -18,12 +18,6 @@ paper_pdf: ""
 
 ---
 
-**<% tp.date.now("YYYY-MM-DD") %>**  
-<br>
-**Junyeong Park**
-
----
-
-**<% tp.date.now("YYYY-MM-DD") %>**  
+**2026-05-11**  
 <br>
 **Junyeong Park**
