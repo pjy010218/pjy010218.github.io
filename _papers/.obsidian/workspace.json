@@ -25,10 +25,14 @@
             "id": "1e33ca90238490bb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "2026-04-25-CapstoneDesign_1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-25-CapstoneDesign_1"
             }
           }
         ],
@@ -105,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-11-08-Survey1.md",
+                "file": "2026-04-25-CapstoneDesign_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-11-08-Survey1 의 백링크"
+              "title": "2026-04-25-CapstoneDesign_1 의 백링크"
             }
           },
           {
@@ -180,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,10 +201,14 @@
   },
   "active": "1e33ca90238490bb",
   "lastOpenFiles": [
+    "wiki/capstone-design.md",
     "2026-04-25-CapstoneDesign_1.md",
+    "wiki",
+    "2026-02-05-HorizontalPolicyPropagation.md",
+    "_wiki/capstone-design.md",
+    "_wiki",
     "2026-05-11-CapstoneDesign_2.md",
     "update_ongoing.py",
-    "2026-02-05-HorizontalPolicyPropagation.md",
     "2025-11-08-Survey1.md",
     "2025-11-12-Survey2.md",
     "2025-11-22-FuzzingForDA3.md",

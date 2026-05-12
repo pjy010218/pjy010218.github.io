@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
+                "file": "capstone-design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석"
+              "title": "capstone-design"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
+                "file": "capstone-design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석 의 백링크"
+              "title": "capstone-design 의 백링크"
             }
           },
           {
@@ -179,6 +179,18 @@
               "icon": "lucide-list",
               "title": "capstone-design 의 개요"
             }
+          },
+          {
+            "id": "080479f4a84f1af6",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "capstone-design.md"
+              },
+              "icon": "lucide-info",
+              "title": "capstone-design 의 파일 속성"
+            }
           }
         ]
       }
@@ -199,9 +211,9 @@
   },
   "active": "3addcde587ce6b27",
   "lastOpenFiles": [
+    "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
     "A_Self-Synchronizing_Cyber_Deception_Framework_via_Infrastructure_as_Code_Reflection.md",
     "LLM의_민감_정보_유출_방지_기술의_동향과_한계.md",
-    "에이전틱_AI_환경에서의_데이터_과다_수집_위협_분석.md",
     "ongoing-research.md",
     "Capstone_Design.md",
     "capstone-design.md",
