@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
+  gem "jekyll-relative-links"
 end
 
 # 마크다운 파서 및 성능 향상
