@@ -1,7 +1,7 @@
 ---
-seotitle: [[capstone-design|Capstone Design]] 3
-title: "[[capstone-design|Capstone Design]]: Creating a Custom Dataset"
-description: [[research_log|Research log]] for 2026-05-13-CapstoneDesign_3
+seotitle: Capstone Design 3
+title: "Capstone Design: Creating a Custom Dataset"
+description: Research log for 2026-05-13-CapstoneDesign_3
 author: Junyeong Park
 type: post
 updated: 2026-05-13
@@ -13,7 +13,7 @@ tags:
     - dataset
     - log
 research_stage: idea
-related: ["[[capstone-design|Capstone Design]]"]
+related: ["Capstone Design"]
 paper_pdf: ""
 ---
 

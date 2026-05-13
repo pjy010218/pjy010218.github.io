@@ -11,7 +11,7 @@ url: /papers/HPP-1
 tags:
   - Horizontal Policy Propagation
   - Bio-Inspired Microservice Security
-related: ["[[ongoing-research|Ongoing Research]]"]
+related: ["Ongoing Research"]
 paper_pdf: ""
 ---
 ### Toward a Bio-Inspired Immune System for Cloud Microservices

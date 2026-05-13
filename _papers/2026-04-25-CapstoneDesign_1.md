@@ -1,7 +1,7 @@
 ---
-seotitle: [[capstone-design|Capstone Design]] 1
-title: "A New Project: [[capstone-design|Capstone Design]]"
-description: [[research_log|Research log]] for 2026-04-25-CapstoneDLP
+seotitle: Capstone Design 1
+title: "A New Project: Capstone Design"
+description: Research log for 2026-04-25-CapstoneDLP
 author: Junyeong Park
 type: post
 updated: 2026-04-25
@@ -12,7 +12,7 @@ tags:
     - capstone
     - DLP
 research_stage: idea
-related: ["[[capstone-design|Capstone Design]]"]
+related: ["Capstone Design"]
 paper_pdf: ""
 ---
 
