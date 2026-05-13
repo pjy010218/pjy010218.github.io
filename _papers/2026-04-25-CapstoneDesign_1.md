@@ -19,7 +19,7 @@ paper_pdf: ""
 ### A New Project: Capstone Design
 
 This is a new project.<br>
-Our college (Sejong University) has a class called "[Capstone Design](../_wiki/capstone-design.md)" for 4th grade students. The class is essentially creating one security solution/product per team in the time of one semester.<br>
+Our college (Sejong University) has a class called "[Capstone Design](/wiki/capstone-design)" for 4th grade students. The class is essentially creating one security solution/product per team in the time of one semester.<br>
 Originally it was supposed to be free topic, where the students were allowed to work on anything they preferred. That raised some issues. Some students brought pre-built products that they've done somewhere else, called it new, and presented it to the professors. The professors didn't like that at all, and they came to the conclusion that this year, that they themselves would present the topics to the students. <br>
 So this year, our team (4 man team of highly intelligent students) chose to work on Data Loss Prevention, specifically in the AI domain. We had a fair amount of excitement for this project, especially because the AI/LLM domain was the hot potato (still is), and we thought it to be challenging for us to catch up with the most trending engineering field in a security perspective. <br>
 To be honest, this was a very new field for me, but it was indeed exciting rather than scary. It was the perfect opportunity to study the new emerging technology, and get to explore the security aspects of it.<br>
