@@ -7,7 +7,7 @@ export default function WikiIndex() {
   const papers = allPages.filter(p => p.type === 'papers');
 
   return (
-    <div className="flex w-full min-h-screen bg-white text-[#202122] font-sans">
+    <div className="flex w-full min-h-screen bg-white text-[#202122] font-sans wikipedia-aesthetic">
       <aside className="w-[11rem] lg:w-56 flex-shrink-0 bg-[#f6f6f6] border-r border-[#a7d7f9] p-4 hidden md:block">
         <div className="mb-8 mt-4 pl-2">
           <Link href="/" className="text-2xl font-serif text-black tracking-tight" style={{ fontFamily: "'Linux Libertine', 'Georgia', 'Times', serif" }}>

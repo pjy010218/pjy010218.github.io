@@ -4,8 +4,6 @@ title: A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code
 description: Wiki introduction page for research paper [A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection]
 ---
 
-# A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection
-
 Welcome to the Wiki page for the research paper, **A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection**.
 
 ## 1. Overview
@@ -65,4 +63,4 @@ The research demonstrates how cyber deception can become a practical DevSecOps-c
 
 ## Notes
 
-*This paper proposes an automated high-fidelity cyber deception framework that continuously synchronizes honeypot environments with real infrastructure using Infrastructure as Code reflection techniques.*
+_This paper proposes an automated high-fidelity cyber deception framework that continuously synchronizes honeypot environments with real infrastructure using Infrastructure as Code reflection techniques._

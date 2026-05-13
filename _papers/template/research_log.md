@@ -13,7 +13,7 @@ tags:
   - log
 
 research_stage: idea
-related: ["Ongoing Research"]
+related: ["[[ongoing-research|Ongoing Research]]"]
 paper_pdf: ""
 ---
 

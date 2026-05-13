@@ -4,8 +4,6 @@ title: "LLM의 민감 정보 유출 방지 기술의 동향과 한계"
 description: "Wiki introduction page for research paper [LLM의 민감 정보 유출 방지 기술의 동향과 한계]"
 ---
 
-# LLM의 민감 정보 유출 방지 기술의 동향과 한계
-
 Welcome to the Wiki page for the research paper, **LLM의 민감 정보 유출 방지 기술의 동향과 한계**.
 
 ## 1. Overview
@@ -27,8 +25,8 @@ We classify sensitive information leakage into three major categories.<br>
 - **Input-side:** Occurs when users provide sensitive information to LLMs themselves.
 - **Output-side:** Occurs when AI systems generate responses that contain sensitive information that was previously learned during training or retrieved through RAG systems.
 - **Autonomous-side:** Occurs when Agentic AI systems read and write sensitive information from or to external MCP servers.
-<br>
-Also, sensitive information leakage in AI environments is not limited to direct data exposure. Leakage may also occur indirectly through model-generated responses, retrieval responses, or long-term storage of prompts and conversations by external vendors.<br>
+  <br>
+  Also, sensitive information leakage in AI environments is not limited to direct data exposure. Leakage may also occur indirectly through model-generated responses, retrieval responses, or long-term storage of prompts and conversations by external vendors.<br>
 
 ## 4. Conclusion
 
@@ -40,4 +38,4 @@ We argue that effective data protection in the AI era must move beyond simple ru
 
 ## Notes
 
-*This paper is a survey paper on the current trends and limitations of Agentic AI Security research.*
+_This paper is a survey paper on the current trends and limitations of Agentic AI Security research._

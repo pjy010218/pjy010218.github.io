@@ -4,8 +4,6 @@ title: "Capstone Design Wiki"
 description: "Wiki introduction page for Capstone Design"
 ---
 
-# Capstone Design
-
 Welcome to the Wiki page for **Capstone Design**. This page serves as a centralized introduction and index for all related research logs and artifacts.
 
 ## Overview

@@ -1,34 +1,34 @@
 ---
-seotitle: Capstone Design 2
-title: "Capstone Design: Creating a Custom Dataset"
-description: Research log for 2026-05-11-CapstoneDesign_2
+seotitle: [[capstone-design|Capstone Design]] 3
+title: "[[capstone-design|Capstone Design]]: Creating a Custom Dataset"
+description: [[research_log|Research log]] for 2026-05-13-CapstoneDesign_3
 author: Junyeong Park
 type: post
-updated: 2026-05-11
+updated: 2026-05-13
 sitemap:
-    lastmod: 2026-05-11
-url: /papers/2026-05-13-CapstoneDesign_2
+    lastmod: 2026-05-13
+url: /papers/2026-05-13-CapstoneDesign_3
 tags:
     - capstone
     - dataset
     - log
 research_stage: idea
-related: ["Capstone Design"]
+related: ["[[capstone-design|Capstone Design]]"]
 paper_pdf: ""
 ---
 
 ### Creating a Dataset (of 100 scenarios... for now)
 
-Long story short, we've fully developed our system (a.k.a CLEAR (Contextual Leak Evaluation and Redaction)) this week.<br>
+Long story short, we've fully developed our system (a.k.a [[CLEAR]] (Contextual Leak Evaluation and Redaction)) this week.<br>
 Now we need to evaluate it to see if it works as we hope. However, any open-source benchmarks we found were not good enough to evaluate our system. That's why we decided to create our own dataset. <br>
 
-First, a brief summary of our system, CLEAR.<br>
+First, a brief summary of our system, [[CLEAR]].<br>
 
 - It evaluates the user's initial prompt, generated tool calls from that prompt, and the returned result of that tool call.
 - Based on contextual evaluation via LLM, it redacts the sensitive information from the result.
 - This prevents not only data leak to unauthorized humans, but the AI itself too.
 
-In order to evaluate CLEAR, we have to evaluate it in several categories:
+In order to evaluate [[CLEAR]], we have to evaluate it in several categories:
 
 - Input/Tool Call Contextual Correctness
     - Does it understand the user's intent correctly?
@@ -37,7 +37,7 @@ In order to evaluate CLEAR, we have to evaluate it in several categories:
   In our research, we categorize the relationship between input and tool call in threefold. 1. **I == T**: The tool call is directly related to the user's input, and does not have any signs of overreach. 2. **I < T**: The tool call is related to the user's input, but with misundertood scope (too broad). 3. **I != T**: The tool call is not related to the user's input (signals of Indirect Prompt Injection).
 
 - R Instruction Truth
-    - Is the Redaction Instruction clear, contextual, and accurate?
+    - Is the Redaction Instruction [[CLEAR|clear]], contextual, and accurate?
     - Does it properly identify sensitive fields?
 
 - **For more context:**
@@ -47,7 +47,7 @@ In order to evaluate CLEAR, we have to evaluate it in several categories:
     - "reason": ""
     - "keywords_to_redact": []
 
-The perfect score would be if CLEAR successfully identified the CASE, and successfully identified the right "action", "target_fields", etc.<br>
+The perfect score would be if [[CLEAR]] successfully identified the CASE, and successfully identified the right "action", "target_fields", etc.<br>
 
 This is an example of one benchmark test.<br>
 

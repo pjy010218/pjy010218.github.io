@@ -52,7 +52,7 @@ export function getAllPages(): WikiPage[] {
 
 export function getPageBySlug(slug: string): WikiPage | undefined {
   const pages = getAllPages();
-  // Decode URI component in case the slug has special characters
-  const decodedSlug = decodeURIComponent(slug);
-  return pages.find(p => p.slug === decodedSlug || p.slug === slug);
+  // Decode URI component and strip trailing slashes
+  const cleanSlug = decodeURIComponent(slug).replace(/\/+$/, "");
+  return pages.find(p => p.slug === cleanSlug || p.slug === slug.replace(/\/+$/, ""));
 }

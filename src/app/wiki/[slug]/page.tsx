@@ -25,7 +25,7 @@ export default async function WikiPage(props: { params: Promise<{ slug: string }
   const pagePermalinks = allPages.map(p => p.slug);
 
   return (
-    <div className="flex w-full min-h-screen bg-white text-[#202122] font-sans">
+    <div className="flex w-full min-h-screen bg-white text-[#202122] font-sans wikipedia-aesthetic">
       {/* Left Sidebar (Wikipedia style) */}
       <aside className="w-[11rem] lg:w-56 flex-shrink-0 bg-[#f6f6f6] border-r border-[#a7d7f9] p-4 hidden md:block">
         <div className="mb-8 mt-4 pl-2">

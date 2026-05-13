@@ -1,7 +1,7 @@
 ---
-seotitle: Capstone Design 1
-title: "A New Project: Capstone Design"
-description: Research log for 2026-04-25-CapstoneDLP
+seotitle: [[capstone-design|Capstone Design]] 1
+title: "A New Project: [[capstone-design|Capstone Design]]"
+description: [[research_log|Research log]] for 2026-04-25-CapstoneDLP
 author: Junyeong Park
 type: post
 updated: 2026-04-25
@@ -12,11 +12,11 @@ tags:
     - capstone
     - DLP
 research_stage: idea
-related: ["Capstone Design"]
+related: ["[[capstone-design|Capstone Design]]"]
 paper_pdf: ""
 ---
 
-### A New Project: Capstone Design
+### A New Project: [[capstone-design|Capstone Design]]
 
 This is a new project.<br>
 Our college (Sejong University) has a class called "[Capstone Design](/wiki/capstone-design)" for 4th grade students. The class is essentially creating one security solution/product per team in the time of one semester.<br>

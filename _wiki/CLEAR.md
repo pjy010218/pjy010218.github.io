@@ -4,8 +4,6 @@ title: "CLEAR Project Wiki"
 description: "Wiki introduction page for Contextual Leak Evaluation and Redaction (CLEAR)"
 ---
 
-# CLEAR (Contextual Leak Evaluation and Redaction)
-
 Welcome to the Wiki page for **CLEAR**. This project focuses on developing a dynamic, layered defense architecture to prevent sensitive data leakage in autonomous Large Language Model (LLM) agent environments.
 
 ## Overview
@@ -28,7 +26,7 @@ Welcome to the Wiki page for **CLEAR**. This project focuses on developing a dyn
 
 **Github Page**<br>
 
-- **Sejong Capstone Design Artifacts**: [CLEAR Github Repository](https://github.com/sejong-capstone-seirenes)
+- **Sejong [[capstone-design|Capstone Design]] Artifacts**: [CLEAR Github Repository](https://github.com/sejong-capstone-seirenes)
 
 ## Related Publishment
 
@@ -38,5 +36,5 @@ Welcome to the Wiki page for **CLEAR**. This project focuses on developing a dyn
 
 ## Notes
 
-- This project is being developed as part of the 2026 Sejong University Information Security Capstone Design course by Team **Seirenes**.
+- This project is being developed as part of the 2026 Sejong University Information Security [[capstone-design|Capstone Design]] course by Team **Seirenes**.
 - Current status: System logic implementation and prototype verification finalized. (2026-05-13)

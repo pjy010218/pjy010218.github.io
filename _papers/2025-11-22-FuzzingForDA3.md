@@ -12,7 +12,7 @@ tags:
   - Fuzzing
   - Digital Artifacts
   - research
-related: ["Ongoing Research"]
+related: ["[[ongoing-research|Ongoing Research]]"]
 paper_pdf: ""
 ---
 
