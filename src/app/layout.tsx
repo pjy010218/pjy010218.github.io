@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Crimson_Pro, JetBrains_Mono } from "next/font/google";
+import { Inter, Noto_Serif } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
 
-const crimsonPro = Crimson_Pro({
-  variable: "--font-serif",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400", "600", "800"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
+const notoSerif = Noto_Serif({
+  variable: "--font-serif",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Junyeong Park | Research Log",
+  title: "Junyeong Park | Wiki",
   description: "Research logs and wiki.",
 };
 
@@ -27,40 +27,53 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${crimsonPro.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${notoSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col relative font-serif text-[#111] bg-[#f8f9fa]">
+      <body className="min-h-full flex font-sans text-[14px] leading-[1.6] bg-white text-[#202122]">
+        
+        {/* Left Sidebar (Wikipedia Style) */}
+        <aside className="w-[11rem] lg:w-[13.5rem] flex-shrink-0 bg-[#f6f6f6] border-r border-[#a7d7f9] p-5 hidden md:block min-h-screen">
+          <div className="mb-6 pl-1">
+            <Link href="/" className="font-serif text-black tracking-tight text-xl flex items-center">
+              <span className="text-3xl mr-1 leading-none">P</span>JY Wiki
+            </Link>
+          </div>
+          
+          <nav className="space-y-6">
+            <div>
+              <h3 className="text-xs font-bold text-[#54595d] border-b border-[#c8ccd1] pb-1 mb-2">Navigation</h3>
+              <ul className="space-y-1.5 text-[13px]">
+                <li><Link href="/" className="text-[#0645ad] hover:underline">Main page (Logs)</Link></li>
+                <li><Link href="/wiki" className="text-[#0645ad] hover:underline">Wiki Contents</Link></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="text-xs font-bold text-[#54595d] border-b border-[#c8ccd1] pb-1 mb-2">Connect</h3>
+              <ul className="space-y-1.5 text-[13px]">
+                <li><a href="https://github.com/pjy010218" target="_blank" rel="noreferrer" className="text-[#0645ad] hover:underline">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/pjy010218" target="_blank" rel="noreferrer" className="text-[#0645ad] hover:underline">LinkedIn</a></li>
+              </ul>
+            </div>
+          </nav>
+        </aside>
+
+        {/* Mobile Header */}
+        <div className="md:hidden w-full bg-[#f6f6f6] border-b border-[#a7d7f9] p-4 flex justify-between items-center fixed top-0 z-50">
+          <Link href="/" className="font-serif text-black tracking-tight text-lg font-bold">
+            PJY Wiki
+          </Link>
+          <div className="flex gap-4 text-sm">
+             <Link href="/" className="text-[#0645ad]">Logs</Link>
+             <Link href="/wiki" className="text-[#0645ad]">Wiki</Link>
+          </div>
+        </div>
+
         {/* Main Content Area */}
-        <div className="flex-grow">
+        <div className="flex-grow pt-16 md:pt-0">
           {children}
         </div>
 
-        {/* Bottom-Left Brutalist Anchor */}
-        <div className="fixed bottom-[50px] left-[50px] flex items-end gap-12 z-50 pointer-events-none">
-          {/* Logo */}
-          <div className="font-serif font-bold text-5xl leading-none pointer-events-auto">
-            <span className="block">P</span>
-            <span className="block">J</span>
-            <span className="block">Y</span>
-          </div>
-
-          {/* Profile & Navigation */}
-          <div className="pb-1 pointer-events-auto">
-            <p className="text-sm font-serif max-w-[280px] mb-4 text-[#333]">
-              <strong>Junyeong Park</strong><br/>
-              Researching autonomous LLM agents and contextual data loss prevention (CLEAR). 
-              Information Security student at Sejong University.
-            </p>
-            <nav className="flex gap-6 font-mono text-xs uppercase tracking-widest font-semibold">
-              <Link href="/" className="text-blue-700 hover:text-black transition-colors">
-                Research Logs
-              </Link>
-              <Link href="/wiki" className="text-[#888] hover:text-black transition-colors">
-                Wiki
-              </Link>
-            </nav>
-          </div>
-        </div>
       </body>
     </html>
   );

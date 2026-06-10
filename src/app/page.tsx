@@ -1,8 +1,5 @@
 import { getAllPages } from '@/lib/wiki';
-import { MDXRemote } from 'next-mdx-remote/rsc';
-import remarkGfm from 'remark-gfm';
-import remarkWikiLink from 'remark-wiki-link';
-import rehypeSlug from 'rehype-slug';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Home() {
@@ -16,63 +13,60 @@ export default function Home() {
     });
 
   return (
-    <div className="research-megalith">
-      {papers.map((log) => {
-        const title = log.frontmatter.title || log.slug;
-        const titleLen = title.length;
-        
-        let fsize = "clamp(4.5rem, 9vw, 8rem)";
-        let lh = "0.9";
-        if (titleLen >= 15 && titleLen < 30) {
-           fsize = "clamp(3.5rem, 7vw, 6rem)";
-           lh = "1";
-        } else if (titleLen >= 30 && titleLen < 55) {
-           fsize = "clamp(2.5rem, 5vw, 4rem)";
-           lh = "1.05";
-        } else if (titleLen >= 55) {
-           fsize = "clamp(1.8rem, 3.5vw, 3rem)";
-           lh = "1.15";
-        }
+    <div className="p-6 md:p-10 max-w-5xl mx-auto">
+      {/* Welcome Banner */}
+      <div className="bg-[#f8f9fa] border border-[#a2a9b1] p-6 mb-8 text-center rounded-sm">
+        <h1 className="text-3xl font-serif text-black mb-2 border-none mt-0">Welcome to PJY Wiki</h1>
+        <p className="text-[#202122] text-[15px]">
+          The research hub and knowledge base of <strong>Junyeong Park</strong>.<br/>
+          Focusing on autonomous LLM agents and contextual data loss prevention.
+        </p>
+      </div>
 
-        const tags = log.frontmatter.tags || [];
-        const firstTag = tags.length > 0 ? tags[0].toUpperCase() : 'LOG';
-        let dateVal = log.frontmatter.updated || log.frontmatter.date || '';
-        const dateStr = dateVal instanceof Date ? dateVal.toISOString().split('T')[0] : String(dateVal);
+      <div className="grid grid-cols-1 gap-8">
+        <section>
+          <h2 className="text-2xl font-serif text-black border-b border-[#a2a9b1] pb-1 mb-4 flex justify-between items-end mt-0">
+            <span>Recent Research Logs</span>
+            <span className="text-sm font-sans text-[#54595d] font-normal">({papers.length} articles)</span>
+          </h2>
+          
+          <table className="wikitable w-full text-[14px]">
+            <thead>
+              <tr>
+                <th className="w-[15%] text-left">Date</th>
+                <th className="w-[15%] text-center">Tag</th>
+                <th className="w-[70%] text-left">Title</th>
+              </tr>
+            </thead>
+            <tbody>
+              {papers.map((log) => {
+                const title = log.frontmatter.title || log.slug;
+                const tags = log.frontmatter.tags || [];
+                const firstTag = tags.length > 0 ? tags[0].toUpperCase() : 'LOG';
+                
+                let dateVal = log.frontmatter.updated || log.frontmatter.date || '';
+                const dateStr = dateVal instanceof Date ? dateVal.toISOString().split('T')[0] : String(dateVal);
 
-        return (
-          <details key={log.slug} className="mega-log group">
-            <summary className="mega-title" style={{ fontSize: fsize, lineHeight: lh }}>
-               <span className="mega-text uppercase">{title}</span>
-               <span className="mega-meta">[{firstTag}] {dateStr}</span>
-            </summary>
-            <div className="mega-content prose prose-lg max-w-none">
-              <MDXRemote
-                source={log.content}
-                options={{
-                  mdxOptions: {
-                    format: 'md',
-                    remarkPlugins: [
-                      remarkGfm,
-                      [remarkWikiLink, {
-                        pageResolver: (name: string) => [name],
-                        hrefTemplate: (permalink: string) => `/wiki/${permalink}`,
-                        aliasDivider: '|'
-                      }]
-                    ],
-                    rehypePlugins: [rehypeSlug],
-                  },
-                }}
-              />
-            </div>
-          </details>
-        );
-      })}
+                return (
+                  <tr key={log.slug} className="hover:bg-[#f8f9fa]">
+                    <td className="whitespace-nowrap font-mono text-[13px]">{dateStr}</td>
+                    <td className="text-center text-[#54595d] text-[12px]">{firstTag}</td>
+                    <td>
+                      <Link href={`/wiki/${log.slug}`} className="text-[#0645ad] hover:underline font-medium">
+                        {title}
+                      </Link>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
 
-      {papers.length === 0 && (
-        <h2 style={{ fontSize: '3rem', textAlign: 'right', marginTop: '100px', color: '#aaa' }}>
-          NO LOGS YET.
-        </h2>
-      )}
+          {papers.length === 0 && (
+            <p className="text-[#54595d] italic">No research logs available yet.</p>
+          )}
+        </section>
+      </div>
     </div>
   );
 }
