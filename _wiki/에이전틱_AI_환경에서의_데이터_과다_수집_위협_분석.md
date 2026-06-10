@@ -4,9 +4,7 @@ title: "에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석"
 description: "Wiki introduction page for research paper [에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석]"
 ---
 
-# 에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석
-
-Welcome to the Wiki page for **에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석**.
+Welcome to the Wiki page for the research paper, **에이전틱 AI 환경에서의 데이터 과다 수집 위협 분석**.
 
 ## 1. Overview
 
@@ -30,21 +28,23 @@ Based on these findings, the paper argues that data leakage in Agentic AI enviro
 ## 3. Core Findings
 
 This paper classifies MCP data retrieval tools into two categories:<br>
+
 - **Broad Read**: Returns all attributes related to an object in a single request.
 - **Atomic Read**: Returns only the minimum amount of data necessary for a specific purpose.
-<br>
-We identify Broad Read architectures as the primary source of over-collection risks. Because these tools expose unnecessary fields to the LLM, the model may either leak sensitive information directly or infer hidden information through unintended reasoning.<br>
+  <br>
+  We identify Broad Read architectures as the primary source of over-collection risks. Because these tools expose unnecessary fields to the LLM, the model may either leak sensitive information directly or infer hidden information through unintended reasoning.<br>
 
-We have analyzed **seven widely used MCP servers**, including Github, Stripe, HubSpot, PostgreSQL, Supabase, and Notion MCP servers. We have found that approximately **42.8%** of MCP read tools exhibited Broad Read characteristics that inherently increase the risk of excessive data collection. Some platforms, such as HubSpot, showed especially high Broad Read rates (***almost 85%***)
+We have analyzed **seven widely used MCP servers**, including Github, Stripe, HubSpot, PostgreSQL, Supabase, and Notion MCP servers. We have found that approximately **42.8%** of MCP read tools exhibited Broad Read characteristics that inherently increase the risk of excessive data collection. Some platforms, such as HubSpot, showed especially high Broad Read rates (**_almost 85%_**)
 
 ## 4. Limitations
 
 We highlight the practical limitations in fully replacing Broad Read systems with Atomic Read architectures:<br>
+
 - Excessive tool fragmentation increases management complexity.
 - Agents may incorrectly select tools among numerous fine-grained options.
 - Existing enterprise APIs and DBs are almost impossible to redesign solely for Atomic Read features.
-<br>
-As an alternative, we propose introducing a middle layer that sits between MCP servers and AI agents, and proxies all communications between the two. This layer would analyze the user's intent and contextually control unnecessary data exposure during tool interactions and from tool results.
+  <br>
+  As an alternative, we propose introducing a middle layer that sits between MCP servers and AI agents, and proxies all communications between the two. This layer would analyze the user's intent and contextually control unnecessary data exposure during tool interactions and from tool results.
 
 ## Related Publishment
 

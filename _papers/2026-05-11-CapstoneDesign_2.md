@@ -7,7 +7,7 @@ type: post
 updated: 2026-05-11
 sitemap:
     lastmod: 2026-05-11
-url: /papers/2026-05-11-capstonedesign_2
+url: /papers/2026-05-11-CapstoneDesign_2
 tags:
     - capstone
     - log
