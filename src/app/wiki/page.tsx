@@ -12,6 +12,15 @@ export default function WikiIndex() {
        return titleA.localeCompare(titleB); // Ascending (A-Z) for Wiki index
     });
 
+  // Grouping by first tag or 'General'
+  const categories: Record<string, typeof wikis> = {};
+  wikis.forEach(page => {
+    const tags = page.frontmatter.tags || [];
+    const cat = tags.length > 0 ? tags[0] : 'General';
+    if (!categories[cat]) categories[cat] = [];
+    categories[cat].push(page);
+  });
+
   return (
     <div className="p-6 md:p-10 max-w-5xl mx-auto">
       <h1 className="text-3xl font-serif text-black border-b border-[#a2a9b1] pb-2 mb-6 mt-0">
@@ -22,26 +31,31 @@ export default function WikiIndex() {
         <p>This is the central index for all wiki entries, concepts, and ongoing project documentation.</p>
       </div>
 
-      <section>
-        <div className="bg-[#f8f9fa] border border-[#a2a9b1] p-4 mb-6">
-          <ul className="list-disc pl-5 space-y-2 text-[14px]">
-            {wikis.map((page) => {
-              const title = page.frontmatter.title || page.slug;
-              return (
-                <li key={page.slug}>
-                  <Link href={`/wiki/${page.slug}`} className="text-[#0645ad] hover:underline font-medium">
-                    {title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-          
-          {wikis.length === 0 && (
-            <p className="text-[#54595d] italic text-sm">No wiki entries available yet.</p>
-          )}
-        </div>
-      </section>
+      <div className="space-y-6">
+        {Object.keys(categories).sort().map(cat => (
+          <section key={cat} className="bg-[#f8f9fa] border border-[#a2a9b1] p-4">
+            <h2 className="text-lg font-serif text-[#000000] border-b border-[#c8ccd1] pb-1 mb-3 mt-0 flex items-center">
+              <span className="text-[#54595d] text-[12px] mr-2">▶</span> {cat}
+            </h2>
+            <ul className="list-disc pl-5 space-y-2 text-[14px]">
+              {categories[cat].map((page) => {
+                const title = page.frontmatter.title || page.slug;
+                return (
+                  <li key={page.slug}>
+                    <Link href={`/wiki/${page.slug}`} className="text-[#0645ad] hover:underline font-medium">
+                      {title}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))}
+
+        {wikis.length === 0 && (
+          <p className="text-[#54595d] italic text-sm">No wiki entries available yet.</p>
+        )}
+      </div>
     </div>
   );
 }

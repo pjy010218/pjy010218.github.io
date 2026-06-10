@@ -34,7 +34,7 @@ export default function RootLayout({
         {/* Left Sidebar (Wikipedia Style) */}
         <aside className="w-[11rem] lg:w-[13.5rem] flex-shrink-0 bg-[#f6f6f6] border-r border-[#a7d7f9] p-5 hidden md:block min-h-screen">
           <div className="mb-6 pl-1">
-            <Link href="/" className="font-serif text-black tracking-tight text-xl flex items-center">
+            <Link href="/" className="font-serif text-black tracking-tight text-xl flex items-center whitespace-nowrap">
               <span className="text-3xl mr-1 leading-none">P</span>JY Wiki
             </Link>
           </div>

@@ -33,9 +33,9 @@ export default function Home() {
           <table className="wikitable w-full text-[14px]">
             <thead>
               <tr>
-                <th className="w-[15%] text-left">Date</th>
-                <th className="w-[15%] text-center">Tag</th>
                 <th className="w-[70%] text-left">Title</th>
+                <th className="w-[15%] text-center">Tag</th>
+                <th className="w-[15%] text-left">Date</th>
               </tr>
             </thead>
             <tbody>
@@ -49,13 +49,13 @@ export default function Home() {
 
                 return (
                   <tr key={log.slug} className="hover:bg-[#f8f9fa]">
-                    <td className="whitespace-nowrap font-mono text-[13px]">{dateStr}</td>
-                    <td className="text-center text-[#54595d] text-[12px]">{firstTag}</td>
                     <td>
                       <Link href={`/wiki/${log.slug}`} className="text-[#0645ad] hover:underline font-medium">
                         {title}
                       </Link>
                     </td>
+                    <td className="text-center text-[#54595d] text-[12px]">{firstTag}</td>
+                    <td className="whitespace-nowrap font-mono text-[13px]">{dateStr}</td>
                   </tr>
                 );
               })}
