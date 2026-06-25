@@ -121,3 +121,5 @@ Chromium
 ```
 
 This got me thinking of an unexpected realization: All you need is a phone.
+
+[[View in Projects](/projects/termux-agent-browser.md)]
