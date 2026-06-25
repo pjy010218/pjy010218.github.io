@@ -12,6 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Welcome to my personal website. I am a researcher in Cybersecurity, currently focusing on Agentic AI Security and Low-level System Security.
 keywords: cybersecurity, agentic ai security, low-level system security
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+timezone: Asia/Seoul # specify timezone to ensure posts are published correctly
 icon: 🔐 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://pjy010218.github.io # the base hostname & protocol for your site

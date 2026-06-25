@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From Cloud Dependency to Pocket Infrastructure
-date: 2026-06-25 19:07:00
+date: 2026-06-25 19:07:00 +0900
 description: Running Hermes Agent on Android with Native Browser Automation
 tags: hermes android termux infrastructure
 categories: engineering
