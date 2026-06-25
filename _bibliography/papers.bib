@@ -1,16 +1,14 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
 @inproceedings{11245172,
   author    = { Park, Junyeong and Kim, Sayeon and Jang, Woohyun and Kim, Yeon-Jae and Shim, Shinwoo and Lee, Olmi and Park, Ki-Woong },
   booktitle = { 2025 IEEE 30th Pacific Rim International Symposium on Dependable Computing (PRDC) },
-  title     = {{ A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection }},
+  title     = { A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection },
   year      = {2025},
   pages     = {146-151},
-  abstract  = { As cyberattacks become more sophisticated, the us e of honeypots has emerged as an alternative to proactively collec t attackers' exploit strategies. However, conventional honeypots o ften lack realism and require much human effort to deploy and m aintain in modern IT infrastructures. This excessive cost in resou rces creates a major obstacle to their widespread use. To address these challenges, this paper proposes a self-synchronizing cyber d eception framework that upholds the declarative approach of I nfrastructure as Code (IaC), maintaining idempotency and consis tency while automatically generating a deceptive environment. O ur framework treats the target system's laC files as a blueprint to automatically generate and deploy a high-fidelity, “digital twin” deception environment. Our framework uses an automated pip eli ne to analyze the laC file, apply the predefined transformation ru les, and dynamically build new container images - replicating stru ctural elements while replacing the core application logic with a h oneypot. After deployment, the framework keeps the deceptive en vironment synchronized with the original system by automaticall y re-deploying the pipeline in response to any changes in the sour ce laC file, increasing fidelity and reducing management costs. T he implementation of this prototype successfully shows a reductio n in the manual effort required for deploying and maintaining de ception environments, presenting a scalable and sustainable fram ework for active defense. This provides a strong foundation for b uilding the next-generation defense mechanisms that can adapt to both evolving cyberattacks and changing infrastructure. },
-  keywords  = {Costs;Codes;Pipelines;Reflection;Real-time systems;Logic;Synchronization;Security;Computer crime;Thermal stability},
+  abstract  = { As cyberattacks become more sophisticated, the use of honeypots has emerged as an alternative to proactively collect attackers' exploit strategies. However, conventional honeypots often lack realism and require much human effort to deploy and maintain in modern IT infrastructures. This excessive cost in resources creates a major obstacle to their widespread use. To address these challenges, this paper proposes a self-synchronizing cyber deception framework that upholds the declarative approach of Infrastructure as Code (IaC), maintaining idempotency and consistency while automatically generating a deceptive environment. Our framework treats the target system's IaC files as a blueprint to automatically generate and deploy a high-fidelity, “digital twin” deception environment. Our framework uses an automated pipeline to analyze the IaC file, apply the predefined transformation rules, and dynamically build new container images - replicating structural elements while replacing the core application logic with a honeypot. After deployment, the framework keeps the deceptive environment synchronized with the original system by automatically re-deploying the pipeline in response to any changes in the source IaC file, increasing fidelity and reducing management costs. The implementation of this prototype successfully shows a reduction in the manual effort required for deploying and maintaining deception environments, presenting a scalable and sustainable framework for active defense. This provides a strong foundation for building the next-generation defense mechanisms that can adapt to both evolving cyberattacks and changing infrastructure. },
+  keywords  = {Deception; Synchronization; Honeypot; Security; IaC; Digital Twin},
   doi       = {10.1109/PRDC67299.2025.00027},
   url       = {https://doi.ieeecomputersociety.org/10.1109/PRDC67299.2025.00027},
   publisher = {IEEE Computer Society},
@@ -18,106 +16,65 @@
   month     = Nov
 }
 
-
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@inproceedings{26ASK'S,
+  author    = { Gim, Doyeong and Park, Junyeong and Kim, Junsik and Ko, Namhyun and Yoon, Jubeom },
+  booktitle = { 2026 Annual Symposium of Kora Information Processing Society (ASK) },
+  title     = { Hybrid Security Architecture Based on Virtually Abstracted Tools (VAT) for LLM Agent Data Loss Prevention },
+  year      = {2026},
+  pages     = {310-312},
+  abstract  = { Autonomous agent systems powered by Large Language Models (LLMs) are maximizing interoperability with external databases through the adoption of the Model Context Protocol (MCP). However, this advancement has introduced new security challenges, including Data Over-Exposure (DOE), in which agents collect sensitive information beyond their functional requirements, and Tool-Orchestration Privacy Risks (TOP-R), where seemingly harmless fragments of information are combined to infer sensitive data. To address these threats, both academia and industry have primarily relied on post-processing approaches that employ LLMs as security controllers (LLM-as-a-Judge). Nevertheless, such approaches face inherent limitations, including hallucination and increased latency. To overcome these challenges and enable a next-generation Data Loss Prevention (DLP) architecture, this study proposes a four-stage hybrid security mechanism based on a Virtually Abstracted Tools (VAT) layer that enforces the Principle of Least Privilege (PoLP) from the design stage. The proposed conceptual architecture conceals original tools from the agent and exposes only fine-grained virtual atomic tools, thereby requiring the agent to explicitly demonstrate its intent through tool selection. Subsequently, the original data returned by the MCP server is forwarded to an LLM-as-a-Judge for post-processing, together with the selected virtual tool that provides contextual evidence of the agent’s intended operation. Through structural analysis, this paper demonstrates the logical validity of the proposed hybrid mechanism, showing its potential to significantly suppress hallucinations in LLM-as-a-Judge systems while reducing processing latency.
+               },
+  keywords  = {LLM;MCP;Security;AI Agents;DLP;LLM-as-a-Judge},
+  doi       = {},
+  url       = {},
+  publisher = {Korea Information Processing Society (KIPS)},
+  address   = {Seoul, Republic of Korea},
+  month     = May
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+@inproceedings{26CISC'S,
+  author    = { Kim, Junsik and Ko, Namhyun and Gim, Doyeong and Park, Junyeong and Yoon, Jubeom },
+  booktitle = { 2026 Conference on Information Security and Cryptography (CISC) },
+  title     = { Analysis of Data Over-Collection Threats in Agentic AI Environments },
+  year      = {2026},
+  pages     = {345-347},
+  abstract  = { Recently, Agentic AI has evolved beyond simple text generation to autonomously utilize external tools and resources. As a result, the adoption of the Model Context Protocol (MCP) has expanded rapidly, introducing new forms of data leakage threats that conventional security mechanisms are unable to detect effectively.This paper analyzes these emerging threats and identifies their root causes as excessive data provisioning by tools and the lack of contextual privacy awareness in Large Language Models (LLMs). In particular, the Broad Read approach, in which agent tools return data schemas that exceed operational requirements to maximize generality and reusability, creates opportunities for data over-collection, enabling LLMs to aggregate, infer, or disclose sensitive information. An examination of widely used MCP servers reveals that approximately 42.8% of existing designs inherently contain structural risks of over-collection. Furthermore, such risks are difficult to detect through traditional output-based monitoring mechanisms alone. Redesigning all existing APIs and databases according to an Atomic Read paradigm is practically infeasible due to the associated operational costs and system efficiency constraints. Therefore, rather than modifying the tools themselves, this paper proposes the introduction of a Context-Aware Filter layer between the MCP server and the agent. By analyzing the intent embedded in user prompts, the proposed approach enables context-sensitive control over data access and disclosure, thereby mitigating over-collection risks while preserving compatibility with existing systems.
+               },
+  keywords  = {LLM;MCP;Security;AI Agents;DLP;LLM-as-a-Judge},
+  doi       = {},
+  url       = {},
+  publisher = {Korea Institute of Information Security & Cryptology},
+  address   = {Seoul, Republic of Korea},
+  month     = May
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
+@inproceedings{26KSII'S,
+  author    = { Park, Junyeong and Ko, Namhyun and Kim, Junsik and Gim, Doyeong and Yoon, Jubeom },
+  booktitle = { 2026 Spring Conference of Korean Society for Internet Information },
+  title     = { Trends and Limitations of Sensitive Information Leakage Prevention Technologies in LLMs },
+  year      = {2026},
+  pages     = {},
+  abstract  = {},
+  keywords  = {LLM;MCP;Security;AI Agents;DLP;LLM-as-a-Judge},
+  doi       = {},
+  url       = {},
+  publisher = {Korean Society for Internet Information},
+  address   = {Seoul, Republic of Korea},
+  month     = May
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+@inproceedings{25CISC'S,
+  author    = { Park, Junyeong and Kim, Jonghyun },
+  booktitle = { 2025 Summer Conference on Information Security and Cryptography (CISC) },
+  title     = { Automating Honeypots through Digital Twins and MITRE ATT&CK TTP Mapping },
+  year      = {2025},
+  pages     = {},
+  abstract  = { This study proposes and experimentally validates a Digital Twin Honeypot (DT Honeypot), an active cyber deception system designed to overcome the limitations of conventional honeypots by leveraging Digital Twin (DT) technology. To achieve this, the proposed system integrates the real-time synchronization capability of digital twins—which continuously replicate changes occurring in the original system to its virtual counterpart—with honeypot technology. To minimize the risk of sensitive data exposure resulting from this synchronization process, a data fictionalization module was designed and implemented. Furthermore, the system incorporates a real-time attack monitoring module that maps attacker activities to the Tactics, Techniques, and Procedures (TTPs) defined in the MITRE ATT&CK framework. Based on the identified attack patterns, the system dynamically exposes an appropriate layer of deceptive assets, thereby minimizing the scope of fake resources revealed to the attacker while maintaining the effectiveness of the deception strategy. Experimental results demonstrate that the DT Honeypot provides greater stability and flexibility than traditional static honeypots. Unlike conventional honeypots, the proposed system can adapt autonomously to changes in the original environment, significantly reducing maintenance costs associated with deception systems. Moreover, by addressing the challenges introduced by the use of digital twin technology, the DT Honeypot is shown to function effectively as an active and adaptive security mechanism.
+               },
+  keywords  = {Deception;Digital Twin;Honeypot;IaC;MITRE ATT&CK},
+  doi       = {},
+  url       = {},
+  publisher = {Korea Institute of Information Security & Cryptology},
+  address   = {Seoul, Republic of Korea},
+  month     = June
 }
