@@ -1,14 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - pjy010218
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - pjy010218/termux-agent-browser
+  - pjy010218/Attack_Prediction_Bi_LSTM
