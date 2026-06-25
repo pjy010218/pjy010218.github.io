@@ -27,7 +27,12 @@ latest_posts:
   limit: 3 # leave blank to include all the news in the `_news` folder
 ---
 
-**"Trustworthy Systems that Scale"**</br>
+**"Trustworthy Systems that Scale"**
+
 In the age of automation and well-educated guesses, I study how autonomous systems remain trustworthy under composition, evolution, and delegation.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+You can review my work through this page, or any of my social media below.
+
+- [LinkedIn](https://www.linkedin.com/in/junyeong-park-0414623a0/?locale=en-US)
+- [Github](https://github.com/pjy010218)
+- [Email](mailto:[pjy010218@sju.ac.kr])
