@@ -1,7 +1,7 @@
 ---
 ---
 
-@inproceedings{11245172,
+@inproceedings{25PRDC,
   author    = { Park, Junyeong and Kim, Sayeon and Jang, Woohyun and Kim, Yeon-Jae and Shim, Shinwoo and Lee, Olmi and Park, Ki-Woong },
   booktitle = { 2025 IEEE 30th Pacific Rim International Symposium on Dependable Computing (PRDC) },
   title     = { A Self-Synchronizing Cyber Deception Framework via Infrastructure as Code Reflection },
@@ -78,3 +78,51 @@
   address   = {Seoul, Republic of Korea},
   month     = June
 }
+
+@inproceedings{25CISC'W_MPFUSE,
+  author    = { Choi, Jae-Min and Park, Jun-Young and Heo, Nam-Jung and Ha, Young-Bin and Jang, Woo-Hyun and Kim, Yeon-Jae and Huh, Jae-Won and Park, Ki-Woong },
+  booktitle = { 2025 Winter Conference on Information Security and Cryptography (CISC) },
+  title     = { MP FUSE: Metamorphic and Polymorphic Mutation Technique Based on Linux FUSE },
+  year      = {2025},
+  pages     = {609-612},
+  abstract  = { With the rapid development of the software industry and the Internet-of-Things (IoT), the protection of internal code and sensitive information is becoming increasingly important. Existing software protection techniques such as obfuscation, encryption, and packing primarily defend against static analysis, but remain vulnerable to execution-time attacks like memory dumping and dynamic analysis. To address these limitations, this paper proposes Metamorphic/Polymorphic FUSE (MP FUSE) based on the Linux Filesystem in Userspace (FUSE). The proposed MP FUSE dynamically mutates internal code every time the software is executed, continuously changing the code structure while maintaining the same functionality, thereby hindering attackers' analysis. We verified that MP FUSE successfully applies polymorphic and metamorphic mutations to various types of execution and internal files while guaranteeing normal execution. Future research aims to advance software protection technology through the enhancement of mutation algorithms and cryptographic mutations on compiled internal variables. },
+  keywords  = {Software Protection; FUSE; Metamorphic Mutation; Polymorphic Mutation},
+  doi       = {},
+  url       = {},
+  pdf       = {25CISC'W_MP FUSE_ 리눅스 FUSE 기반 메타모픽_폴리모픽 변이 기술.pdf},
+  publisher = {Korea Institute of Information Security & Cryptology},
+  address   = {Seoul, Republic of Korea},
+  month     = Nov
+}
+
+@inproceedings{25CISC'W_VFS,
+  author    = { Choi, Jae-Min and Heo, Nam-Jung and Park, Jun-Young and Jang, Woo-Hyun and Kim, Yeon-Jae and Huh, Jae-Won and Park, Ki-Woong },
+  booktitle = { 2025 Winter Conference on Information Security and Cryptography (CISC) },
+  title     = { Anti-Tampering Scenario-Based VFS Investigation and Identification },
+  year      = {2025},
+  pages     = {605-608},
+  abstract  = { As modern warfare becomes highly advanced, Linux-based operating systems are increasingly deployed on weapon systems to perform complex computation and control tasks. However, these systems are vulnerable to reverse-engineering by exporting countries or adversaries seeking to extract critical military secrets or design schematics. In response, various anti-tampering technologies have been developed and integrated into weapon systems. Nevertheless, conventional anti-tampering methods introduce significant system overhead. This study proposes an overhead-reduction method by monitoring the Virtual Filesystem (VFS) layer to recognize tampering conditions. We design a VFS list capable of detecting three tampering scenarios and experimentally validate its effectiveness. Based on these findings, future research will focus on implementing effective anti-tampering techniques that can detect tampering situations and dynamically modify internal components. },
+  keywords  = {Anti-Tampering; VFS; System Monitoring; Security},
+  doi       = {},
+  url       = {},
+  pdf       = {25CISC'W_안티탬퍼링 시나리오 기반의 VFS 조사 및 식별.pdf},
+  publisher = {Korea Institute of Information Security & Cryptology},
+  address   = {Seoul, Republic of Korea},
+  month     = Nov
+}
+
+@inproceedings{25KSII'S_AORM,
+  author    = { Park, Junyeong and Jang, Woo Hyun and Kim, Yeon Jae and Heo, Jae Won and Park, Ki-Woong },
+  booktitle = { 2025 Fall Conference of Korean Society for Internet Information },
+  title     = { AORM: Proposal on a Multi-Layer Risk Model For Threat Level Detection },
+  year      = {2025},
+  pages     = {},
+  abstract  = { Modern threats to unmanned aerial vehicles (UAVs/drones) have evolved beyond simple physical destruction to 'post-capture' scenarios where the adversary attempts to reverse-engineer core internal technologies. However, conventional anti-tampering research primarily focuses on detecting external system intrusion, leaving systems vulnerable to logical attacks occurring internally after the OS has been compromised. To overcome this limitation, this study proposes the Action-Object Risk Matrix (AORM), a two-dimensional risk evaluation model based on a reinterpretation of the traditional Access Control Matrix (ACM), to detect tampering states and identify attacks. This model consists of an 'Action' axis, categorized by the system's functional criticality, and an 'Object' axis, categorized by the importance of the accessed data. In this study, while we define the threat transition—where an attacker moves from low-risk coordinates to high-risk coordinates—as the core indicator of threat level escalation, we utilize the 2D matrix to present a context-aware risk model rather than a simple 'allow/deny' policy. By detecting threat transitions, AORM provides a novel perspective to contextually assess the depth of an attacker's intrusion beyond mere integrity verification, offering broad applicability not limited to drones. Furthermore, it can be efficiently implemented in modern operating systems using kernel tracing technologies like eBPF, serving as a versatile security paradigm for threat detection in any embedded system. },
+  keywords  = {AORM; Security; Risk Model; eBPF; Drone Security; Embedded Security},
+  doi       = {},
+  url       = {},
+  pdf       = {25KSII'S_AORM_ 위협 수준 탐지를 위한 다계층 구조 기반 위험 모델 제안.pdf},
+  publisher = {Korean Society for Internet Information},
+  address   = {Seoul, Republic of Korea},
+  month     = Oct
+}
