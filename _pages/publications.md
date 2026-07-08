@@ -18,3 +18,13 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+<style>
+  /* Highlight core/important papers (international conference and journal publications) */
+  [id="26KIISC_AT"],
+  [id="26KIISC_AT"] a:not(.btn),
+  [id="25PRDC"],
+  [id="25PRDC"] a:not(.btn) {
+    color: #e03131 !important; /* Premium crimson red */
+  }
+</style>
