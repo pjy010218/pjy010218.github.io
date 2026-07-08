@@ -21,10 +21,16 @@ nav_order: 2
 
 <style>
   /* Highlight core/important papers (international conference and journal publications) */
-  [id="26KIISC_AT"],
-  [id="26KIISC_AT"] a:not(.btn),
-  [id="25PRDC"],
-  [id="25PRDC"] a:not(.btn) {
+  [id="26KIISC_AT"] .title,
+  [id="26KIISC_AT"] .author,
+  [id="26KIISC_AT"] .author *,
+  [id="26KIISC_AT"] .periodical,
+  [id="26KIISC_AT"] .periodical *,
+  [id="25PRDC"] .title,
+  [id="25PRDC"] .author,
+  [id="25PRDC"] .author *,
+  [id="25PRDC"] .periodical,
+  [id="25PRDC"] .periodical * {
     color: #e03131 !important; /* Premium crimson red */
   }
 </style>
