@@ -10,7 +10,7 @@ category: work
 
 `CLEAR` is an LLM-as-a-Judge based Data Loss Prevention system, a graduation project for Sejong University InfoSec students.
 
-*Short for **Contextual Leak Evaluation and Redaction**.*
+_Short for **Contextual Leak Evaluation and Redaction**._
 
 ## The Problem
 
@@ -54,4 +54,4 @@ Sanitized Result Returned to Agent
 
 ## Links
 
-- **GitHub Repository**: [CLEAR](https://github.com/sejong-capstone-seirenes/clear) *(Currently private, will be public soon)*
+- **GitHub Repository**: [CLEAR](https://github.com/sejong-capstone-seirenes/clear) _(Currently private, will be public soon)_

@@ -18,6 +18,7 @@ This is where we found out the tool/API design is fundamentally flawed in securi
 ## My Contribution
 
 I contributed this realization to the **AIVSS Scoring System For OWASP Agentic AI Core Security Risks v1 Draft**, in the **"Agentic AI Tool Misuse"** section, and this is what I wrote:
+
 > **Over-Privileged Read Scope:** The agent utilizes tools designed for broad, unvetted reading rather than strictly scoped, granular queries, mainly driven by development convenience. Importing vast, unrestricted data chunks increases the attack surface for Indirect Prompt Injections and possible data leakage.
 
 Disclaimer: The draft is still in writing, so full disclosure of the document is impossible, and the contribution itself still needs to be accepted into the final document.
